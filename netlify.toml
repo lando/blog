@@ -9,6 +9,7 @@
   to = "https://lando.dev/blog/:splat"
   status = 301
 [[redirects]]
-  from = "https://blog.lndo.io/*"
+  from = "/*"
   to = "https://lando.dev/blog/:splat"
-  status = 301
+  status = 200
+  force = true
