@@ -1,0 +1,30 @@
+name: lando-blog
+env_file:
+  - lando.env
+excludes:
+  - node_modules
+proxy:
+  cli:
+    - blog.lndo.site:8011
+services:
+  cli:
+    type: node:14
+    build:
+      - yarn install
+    scanner: false
+    ssl: true
+    sslExpose: false
+    overrides:
+      ports:
+        - '8011:8011'
+tooling:
+  build:
+    service: cli
+    cmd: yarn dev
+    description: Launch the blog
+  node:
+    service: cli
+  vuepress:
+    service: cli
+  yarn:
+    service: cli
