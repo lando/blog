@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 
 module.exports = {
+  base: '/blog/',
   title: 'Landob.log',
   description: 'A liberating blog by and for professional developers. We share things about tech, DevOps and development using but not limited to Lando.',
   configureWebpack: config => {
