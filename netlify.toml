@@ -3,8 +3,8 @@
   publish = "_site"
   command = "yarn build"
 
-# Domain redirects
+# Subdomain redirects
 [[redirects]]
-  from = "https://blog.devwithlando.io/*"
+  from = "/*"
   to = "https://lando.dev/blog/:splat"
-  status = 301
+  status = 301!
