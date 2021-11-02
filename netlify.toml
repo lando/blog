@@ -5,7 +5,7 @@
 
 # Subsite redirects
 [[redirects]]
-  from = "/blog/*"
-  to = "/:splat"
+  from = "/*"
+  to = "/blog/:splat"
   status = 200
   force = true
