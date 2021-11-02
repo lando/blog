@@ -1,11 +1,4 @@
 [build]
   base = "./"
-  publish = "_site"
+  publish = "blog/_site"
   command = "yarn build"
-
-# Subsite redirects
-[[redirects]]
-  from = "/*"
-  to = "/blog/"
-  status = 200
-  force = true

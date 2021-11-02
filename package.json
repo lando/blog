@@ -12,7 +12,7 @@
     "url": "https://github.com/lando/sites/blog"
   },
   "scripts": {
-    "build": "vuepress build src -d _site",
+    "build": "vuepress build src -d blog/_site",
     "lint": "eslint --quiet --no-ignore scripts",
     "release": "bump --prompt --tag --all --push",
     "dev": "vuepress dev --temp /tmp/lando-blog --cache /tmp/lando-blog-cache --port 8011 src",

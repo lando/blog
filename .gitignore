@@ -26,6 +26,4 @@ env.yml
 lando.env
 
 # docs
-_blog
-_events
-_site
+blog/_site
