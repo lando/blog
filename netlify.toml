@@ -1,6 +1,6 @@
 [build]
   base = "./"
-  publish = "blog/_site"
+  publish = "_site"
   command = "yarn build"
 
 # Domain redirects
