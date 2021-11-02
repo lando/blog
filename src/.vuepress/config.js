@@ -68,31 +68,18 @@ module.exports = {
   theme: '@vuepress/theme-blog',
   themeConfig: {
     logo: '/images/logo-pink-small.png',
-    docsDir: 'blog',
-    docsBranch: 'master',
+    docsDir: 'src',
+    docsBranch: 'main',
     search: false,
     editLinks: false,
     nav: [
-      {
-        text: 'Case Studies',
-        link: '/tag/case-study/',
-      },
-        {
-        text: 'Development',
-        link: '/tag/development/',
-      },
-      {
-        text: 'DevOps',
-        link: '/tag/devops/',
-      },
-      {
-        text: 'Workflows',
-        link: '/tag/workflows/',
-      },
-      {
-        text: 'Lando',
-        link: '/tag/lando/',
-      },
+      {text: 'Main Site', link: 'https://lando.dev'},
+      {text: 'Events', link: 'https://lando.dev/events'},
+      {text: 'Case Studies', link: '/tag/case-study/'},
+      {text: 'Development', link: '/tag/development/'},
+      {text: 'DevOps', link: '/tag/devops/'},
+      {text: 'Workflows', link: '/tag/workflows/'},
+      {text: 'Lando', link: '/tag/lando/'},
     ],
   },
 };
