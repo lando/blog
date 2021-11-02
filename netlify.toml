@@ -2,10 +2,3 @@
   base = "./"
   publish = "_site"
   command = "yarn build"
-
-# Subsite redirects
-[[redirects]]
-  from = "/*"
-  to = "/blog/:splat"
-  status = 301
-  force = true
