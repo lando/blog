@@ -7,5 +7,5 @@
 [[redirects]]
   from = "/*"
   to = "/blog/:splat"
-  status = 200
+  status = 301
   force = true
