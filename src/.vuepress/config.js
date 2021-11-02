@@ -28,7 +28,7 @@ module.exports = {
         },
       ],
       feed: {
-        canonical_base: 'https://blog.lando.dev',
+        canonical_base: 'https://lando.dev/blog',
         feed_options: {
           favicon: 'https://lando.dev/favicon.ico',
           image: 'https://lando.dev/images/logo-pink-small.png',
@@ -46,7 +46,7 @@ module.exports = {
         },
       ],
       sitemap: {
-        hostname: 'https://blog.lando.dev',
+        hostname: 'https://lando.dev/blog',
       },
     },
     '@vuepress/google-analytics': {
@@ -58,10 +58,10 @@ module.exports = {
         name: 'Lando',
         twitter: 'devwithlando',
       },
-      canonical_base: 'https://blog.lando.dev',
+      canonical_base: 'https://lando.dev/blog',
     },
     'robots': {
-      host: 'https://blog.lando.dev',
+      host: 'https://lando.dev/blog',
       sitemap: '/sitemap.xml',
     },
   },
