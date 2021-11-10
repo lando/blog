@@ -50,7 +50,7 @@ module.exports = {
       },
     },
     '@vuepress/google-analytics': {
-      ga: 'UA-74237404-6',
+      ga: 'UA-74237404-3',
     },
     'autometa': {
       image: 'https://lando.dev/images/logo-pink-medium.png',
