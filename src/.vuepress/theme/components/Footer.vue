@@ -3,7 +3,7 @@
     <div class="footer-top">
       <div class="inner">
         <div class="footer-image">
-          <img src="/images/logo-pink-small.png" alt="lando logo">
+          <img src="/images/logo-pink-small.png" alt="lando logo" loading="lazy">
         </div>
       </div>
     </div>

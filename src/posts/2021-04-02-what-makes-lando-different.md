@@ -139,7 +139,7 @@ It's why individual developers and companies [contribute to the Lando project.](
 
 ### Developers of the World Unite
 
-<img style="float:right; margin: 20px; object-fit:cover; border-radius:50%;" src="/images/LandoAlliance.jpg" alt="Lando liberating developers fist in the air picture." />
+<img style="float:right; margin: 20px; object-fit:cover; border-radius:50%;" src="/images/LandoAlliance.jpg" alt="Lando liberating developers fist in the air picture." loading="lazy" />
 
 
 Ultimately, Lando as a technology will become irrelevant, but the Lando community and its spirit will survive far longer than any dev tool. We can't be solely focused on solving problems like local development, build automation, testing, deployment. We need to stay attuned to the broader context of our work, to the changing realities of web development. We need to find more ways to not only allow ourselves to thrive within the tech world, but to help others enjoy its fruits and avoid its dangers.
