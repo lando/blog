@@ -1,3 +1,8 @@
+v1.0.6 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.6)
+------------------------
+
+* Adjust assets
+
 v1.0.5 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.5)
 ------------------------
 

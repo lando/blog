@@ -13,12 +13,12 @@ module.exports = {
   },
   head: [
     ['meta', {name: 'viewport', content: 'width=device-width, initial-scale=1'}],
-    ['link', {rel: 'preconnect', href: '//js.hs-scripts.com/6478338.js', crossorigin: 'true'}],
-    ['link', {rel: 'preconnect', href: '//fonts.googleapis.com/css?family=Poppins:700|Source+Sans+Pro&display=swap', crossorigin: 'true'}],
+    ['link', {rel: 'preconnect', href: 'https://js.hs-scripts.com/6478338.js', crossorigin: 'true'}],
+    ['link', {rel: 'preconnect', href: 'https://fonts.googleapis.com/css?family=Poppins:700|Source+Sans+Pro&display=swap', crossorigin: 'true'}],
     ['link', {rel: 'icon', href: '/favicon.ico'}],
     ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
-    ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Poppins:700|Source+Sans+Pro&display=swap'}],
-    ['script', {src: '//js.hs-scripts.com/6478338.js'}],
+    ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:700|Source+Sans+Pro&display=swap'}],
+    ['script', {src: 'https://js.hs-scripts.com/6478338.js'}],
   ],
   plugins: {
     '@vuepress/blog': {
