@@ -1,4 +1,4 @@
-v1.0.3 [November 2, 2021](https://github.com/lando/website/releases/tag/v1.0.3)
+v1.0.3 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.3)
 ------------------------
 
 * Adjust linter and google analytics tag
