@@ -1,5 +1,8 @@
 <template>
   <div id="post">
+    <ul v-if="post.tags" class="post-meta-tags">
+      <PostTag v-for="tag in post.tags" :class="tag" :key="tag" :tag="tag" />
+    </ul>
     <div class="post-title">
       <NavLink :link="post.path">{{ post.title }}</NavLink>
     </div>
@@ -10,7 +13,6 @@
         :pic="post.frontmatter.pic"
         :link="post.frontmatter.link"
         :date="post.frontmatter.date"
-        :location="post.frontmatter.location"
       />
     </div>
 
@@ -18,7 +20,7 @@
       {{ post.frontmatter.description || post.description || post.frontmatter.summary || post.summary  }}
     </p>
 
-    <p class="post-summary">
+    <p class="read-more">
       <NavLink :link="post.path">Read More</NavLink>
     </p>
 
@@ -27,13 +29,21 @@
 
 <script>
 import PostHeader from '@theme/components/PostHeader.vue';
+import PostTag from '@theme/components/PostTag.vue';
 
 export default {
-  components: {PostHeader},
+  components: {PostHeader, PostTag},
   props: {
     post: {
       type: Object,
       default: () => ({}),
+    },
+  },
+  computed: {
+    resolvedTags() {
+      console.log(this.post);
+      if (!this.post.tags || Array.isArray(this.post.tags)) return this.post.tags;
+      return [this.post.tags];
     },
   },
 };
@@ -41,18 +51,43 @@ export default {
 
 <style lang="stylus">
 #post
-  border: 1px dashed #ccc
-  padding: 2em
-  margin-top: 1em
-  margin-bottom: 1em
-  font-family: "PT Serif, Serif"
+  box-shadow: 0px 14px 40px rgba(73, 66, 78, 0.14)
+  border-radius: 6px
+  padding: 2.5rem
+  margin-top: 1rem
+  margin-bottom: 1rem
+  a
+    &:after
+        content: none
   .post-title
-    padding-bottom: 1em
     a
-      font-size: 2em
-      color: $landoBlue
-      text-decoration: none
+      font-size: 2rem
+      color: $landoGrey
+      font-weight: bold
+      line-height: 1.5625em
   .post-meta
-    font-size: 1.2em
+    font-size: 1.25rem
+    color: #786F7E
+    a
+      font-weight: normal
+      color: #786F7E
+  .post-summary
+    font-size: 1.25rem
+  .read-more
+    a
+      color: $landoPink
+      text-transform: uppercase
+      font-weight: bold
+      font-size: 1rem
+      &:after
+        content: ">";
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 18px;
+        background: none
+        width: 40px
+
 
 </style>

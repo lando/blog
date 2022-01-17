@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800&display=swap')
+
 // .vuepress/style.styl, your extra styles.
 h1,
 h2,
 h3,
 h4
   color: $landoGrey
-  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif
-  font-size: 3em
+  font-family: Lexend
+  font-size: 4em
   border: 0
-  letter-spacing: -1px
+  letter-spacing: -0.03em
+  line-height: 68px
+  font-weight: 800
 h2
   font-size: 2em
 h3
@@ -24,3 +28,26 @@ blockquote
   border-left 3px solid lighten($landoGrey, 50%)
   background lighten($landoBlue, 99%)
   font-style italic
+
+body
+  font-family Lexend
+
+a
+  color $landoGrey
+  font-weight bold
+  text-decoration: none
+  position relative
+  &:hover
+    color $landoGrey
+  &::after
+    content: "";
+    background: $solarYellow;
+    position: absolute;
+    width: calc(100% + 2px);
+    left: -1px;
+    bottom: 0px;
+    height: 40%;
+    z-index: -1;
+    transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+  &:hover:after
+    height: 100%;

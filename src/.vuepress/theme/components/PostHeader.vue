@@ -1,9 +1,8 @@
 <template>
   <div class="written-by">
-    <a :href="link" target="_blank">{{ name }}</a>
-    from <NavigationIcon /> {{ location }}
-    on <ClockIcon /> {{ resolvedDate }}
     <a :href="link" target="_blank"><img :src="pic" :alt="name" /></a>
+    <a :href="link" target="_blank">{{ name }}</a>
+    | {{ resolvedDate }}
   </div>
 </template>
 
@@ -30,15 +29,11 @@ export default {
     date: {
       type: String,
     },
-    location: {
-      type: String,
-      default: 'The Internet',
-    },
   },
   computed: {
     resolvedDate() {
       return dayjs(this.date).format(
-        this.$themeConfig.dateFormat || 'ddd MMM DD YYYY'
+        this.$themeConfig.dateFormat || 'ddd, MMM DD, YYYY'
       );
     },
   },
@@ -47,15 +42,14 @@ export default {
 
 <style lang="stylus">
 .written-by
-  font-size: .85em
-  padding-bottom: 1rem
-  border-bottom: 1px dotted #ddd
+  font-size: 1.25em
+  padding-bottom: 1.8125rem
   img
-    width: 24px
+    width: 32px
     border-radius: 100%
-    float: right
+    float: left
     position: relative
-    bottom: 6px
+    margin-right: .6875em
   svg
     width 14px
     height 14px

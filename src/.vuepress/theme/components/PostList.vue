@@ -1,9 +1,9 @@
 <template>
   <div id="base-list-layout" :class="{'posts-list-wrapper': true, 'blog-home': isHome}">
     <div v-if="isHome" class="home-header">
-      <h1>The tech blog by and for professional developers</h1>
+      <h1>Blog</h1>
       <div class="home-header-byline">
-        We share things about tech, DevOps, workflows and doing the developments because it makes other developers lives easier.
+        Posts about Lando, tech, DevOps, workflows and whatever makes your life easier.
       </div>
     </div>
     <CarbonAds :class="{'carbon-ads-home': isHome}"/>
@@ -106,15 +106,12 @@ export default {
 .blog-home
   hr
     border-bottom: 1px dashed #ccc
-  h1
-    font-size: 3.14em
   .home-header
     border-bottom: 1px dashed #ccc
   .home-header-byline
     font-size: 1.8em
     letter-spacing: 0px
-    font-family: PT Serif, Serif
-    color: lighten($landoGrey, 20%)
+    font-family: Lexend
     padding-bottom: 2em
   .carbon-ads
     text-align: center
