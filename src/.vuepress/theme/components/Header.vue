@@ -43,9 +43,9 @@ export default {
 
 #header
   z-index 12
-  position fixed
-  top 0
-  width 100vw
+  max-width: $MQSmall;
+  margin: auto;
+  position: inherit;
   box-sizing border-box
   background-color $headerBgColor
   padding 20px 32px 20px
@@ -56,9 +56,6 @@ export default {
     list-style none
     margin 0
     padding 0
-
-  &:hover
-    box-shadow 0 5px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.1)
 
 // border-bottom 5px solid lighten(#3eaf7c, 50%)
 .header-wrapper
@@ -82,7 +79,6 @@ export default {
     a
       color $darkTextColor
       font-weight bold
-      font-family PT Serif, Serif
       text-decoration none
 
   .header-right-wrap
@@ -100,14 +96,12 @@ export default {
         margin-left 20px
 
         a
-          font-family PT Serif, Serif
           font-size 20px
           // color lighten(#3eaf7c, 30%)
           text-decoration none
           transition color 0.3s
 
     .search-box
-      font-family PT Serif, Serif
       margin-left 20px
 
       input

@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 module.exports = {
   base: '/blog/',
-  title: 'Landob.log',
+  title: 'Lando',
   description: 'A liberating blog by and for professional developers. We share things about tech, DevOps and development using but not limited to Lando.',
   configureWebpack: config => {
     return {plugins: [
@@ -76,13 +76,9 @@ module.exports = {
     search: false,
     editLinks: false,
     nav: [
-      {text: 'Main Site', link: 'https://lando.dev'},
-      {text: 'Events', link: 'https://lando.dev/events'},
-      {text: 'Case Studies', link: '/tag/case-study/'},
-      {text: 'Development', link: '/tag/development/'},
-      {text: 'DevOps', link: '/tag/devops/'},
-      {text: 'Workflows', link: '/tag/workflows/'},
-      {text: 'Lando', link: '/tag/lando/'},
+      {text: 'Docs', link: 'https://lando.dev'},
+      {text: 'Cloud Beta', link: 'https://lando.dev'},
+      {text: 'Blog', link: 'https://lando.dev'},
     ],
   },
 };
