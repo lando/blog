@@ -10,15 +10,7 @@
     <hr v-if="isHome" />
     <h1 v-if="!isHome">{{ title }}</h1>
     <div :class="tagClass">
-      <div v-if="featured" class="posts-featured">
-        <PostSummary :post="featured" />
-      </div>
-      <div v-if="secondary" class="posts-featured-secondary">
-        <div v-for="page in secondary" :key="page.key" class="ui-post">
-          <PostSummary :post="page" />
-        </div>
-      </div>
-      <div class="posts-tertiary">
+      <div class="posts-featured-secondary">
         <div v-for="page in pages" :key="page.key" class="ui-post">
           <PostSummary :post="page" />
         </div>
@@ -58,17 +50,8 @@ export default {
   },
 
   computed: {
-    featured() {
-      if (this.top) return this.$pagination.pages.slice(0, 1)[0];
-      else return undefined;
-    },
     pages() {
-      if (!this.top) return this.$pagination.pages;
-      else return this.$pagination.pages.slice(4);
-    },
-    secondary() {
-      if (this.top) return this.$pagination.pages.slice(1, 4);
-      else return undefined;
+      return this.$pagination.pages;
     },
     top() {
       return this.$pagination.hasPrev === false;
