@@ -80,14 +80,13 @@ export default {
       font-weight: bold
       font-size: 1rem
       &:after
-        content: ">";
+        content: url('/images/chevron-right.svg');
         position: relative;
         display: inline-flex;
-        align-items: center;
         justify-content: center;
-        margin-left: 18px;
         background: none
         width: 40px
+        padding: 2px 0px
 
 
 </style>
