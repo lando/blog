@@ -34,13 +34,19 @@ export default {
   margin 0rem
 
   .post-tag
+    margin-bottom .625rem
     a
       background none
-      border 1px solid #776F7D
+      border 1px solid $quotedText
       border-radius 4px
+      font-weight normal
       &:after, &:before
         background none
         box-shadow none
         border none
+      span
+        color $quotedText
+        &:hover
+          color $landoGrey
 
 </style>

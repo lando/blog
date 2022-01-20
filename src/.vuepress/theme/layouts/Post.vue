@@ -19,7 +19,6 @@
         />
       </div>
       <div class="sidebar">
-        <h2>Contents</h2>
         <Toc />
         <h2>Tags</h2>
         <PostTags
@@ -35,7 +34,7 @@ import CarbonAds from '@theme/components/CarbonAds.vue';
 import PostHeader from '@theme/components/PostHeader.vue';
 import PostFooter from '@theme/components/PostFooter.vue';
 import PostTags from '@theme/components/PostTags.vue';
-import Toc from '@theme/components/Toc.vue';
+import Toc from '../components/Toc.vue';
 
 export default {
   components: {CarbonAds, PostHeader, PostFooter, Toc, PostTags}, // eslint-disable-line

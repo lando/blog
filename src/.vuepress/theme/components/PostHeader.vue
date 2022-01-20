@@ -52,6 +52,7 @@ export default {
   .post-title
     padding-top 0
   .written-by
+    color: $quotedText
     font-size: 1.25em
     img
       width: 32px
@@ -67,4 +68,9 @@ export default {
       top: 3px
       margin-left: 3px
       margin-right: 3px
+    a
+      font-weight: normal
+      color: $quotedText
+      &:after
+        background: none
 </style>
