@@ -1,24 +1,32 @@
 <template>
   <div id="vuepress-theme-blog__post-layout" class="post-content">
+    <PostHeader
+      :title="$frontmatter.title"
+      :name="$frontmatter.author"
+      :pic="$frontmatter.pic"
+      :link="$frontmatter.link"
+      :date="$frontmatter.date"
+      :location="$frontmatter.location"
+    />
     <div class="vuepress-blog-theme-content">
-      <h1 class="post-title">{{ $frontmatter.title }}</h1>
-      <PostHeader
-        :name="$frontmatter.author"
-        :pic="$frontmatter.pic"
-        :link="$frontmatter.link"
-        :date="$frontmatter.date"
-        :location="$frontmatter.location"
-      />
-      <CarbonAds />
-      <Content />
-      <hr />
-      <Newsletter />
-      <PostFooter
-        :tags="$frontmatter.tags"
-        :original="$frontmatter.original"
-      />
+      <div class="main-content">
+        <CarbonAds />
+        <Content />
+        <hr />
+        <Newsletter />
+        <PostFooter
+          :original="$frontmatter.original"
+        />
+      </div>
+      <div class="sidebar">
+        <h2>Contents</h2>
+        <Toc />
+        <h2>Tags</h2>
+        <PostTags
+          :tags="$frontmatter.tags"
+        />
+      </div>
     </div>
-    <Toc />
   </div>
 </template>
 
@@ -26,10 +34,11 @@
 import CarbonAds from '@theme/components/CarbonAds.vue';
 import PostHeader from '@theme/components/PostHeader.vue';
 import PostFooter from '@theme/components/PostFooter.vue';
+import PostTags from '@theme/components/PostTags.vue';
 import Toc from '@theme/components/Toc.vue';
 
 export default {
-  components: {CarbonAds, PostHeader, PostFooter, Toc}, // eslint-disable-line
+  components: {CarbonAds, PostHeader, PostFooter, Toc, PostTags}, // eslint-disable-line
   mounted() {
     console.log(this);
   },
@@ -56,9 +65,13 @@ export default {
     left 0
     z-index: 0
   .vuepress-toc
-    padding-top: 250px
+    padding-top: 0rem
+    margin-bottom: 2rem
     max-width: 295px
     width: 295px
+    position static
+    a:after
+      background: none
   hr
     border-top: 1px dotted #ddd
   .custom-block
@@ -68,18 +81,26 @@ export default {
       color: $landoBlue
       font-size: .8em
       font-weight: 700
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+      font-family: Lexend
     &.thumbnail
       border: 1px dashed #ccc
       padding: 1em
 .vuepress-blog-theme-content
+  display: flex
+  gap: 4.375rem
   font-size 16px
   letter-spacing 0px
-  font-family PT Serif, Serif
+  font-family Lexend
   color $textColor
   position relative
-  .post-title
-    padding-top 0
+  .main-content
+    flex-basis: 80%
+  .sidebar
+    position sticky
+    top 2rem
+    align-self flex-start
+    h2
+      margin: 0rem 1rem
 @media (max-width: $MQSmall)
   .post-content
     .carbon-ads

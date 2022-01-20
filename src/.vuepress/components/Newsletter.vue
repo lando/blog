@@ -39,6 +39,7 @@ export default {
 
 <style lang="stylus">
 .post-subscribe
+  font-family Lexend
   .subscribe
     width: 100%
     padding: 0
