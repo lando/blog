@@ -75,7 +75,7 @@ If you are using Lando on macOS or Windows then you are using Docker Desktop to 
 However you can bump these limits by navigating to `Settings -> Resources`.
 
 ::: thumbnail
-![docker-desktop-dash](https://docs.docker.com/docker-for-mac/images/menu/prefs-advanced.png "Docker Desktop")
+![docker-desktop-dash](https://docs.docker.com/desktop/mac/images/menu/prefs-advanced.png "Docker Desktop")
 :::
 
 I usually bump the CPU's to 4, the RAM to 6GB, the swap to 4GB and the disk to 100GB+. That said you will need to select settings that make sense for your system. A good rule of thumb is to allocate somewhere between 25%-50% of the _TOTAL_ amount of the given system resource.
