@@ -68,7 +68,7 @@ Once Codespaces is enabled, you'll see a "Codespaces" tab when you click on the 
 
 Fork our [drupal-dev-environment](https://github.com/lando/drupal-dev-environment) repo. If you've successfully enabled Codespaces, you should be able to either click on the green "Code" button in your new repo and create a Codespace or visit `https://github.com/[YOUR-GITHUB-USER]/drupal-dev-environment/codespaces`.
 
-![Image of the GitHub Codespaces New Codespace button](/images/codespaces-start-button.jpg)
+<img :src="$withBase('/images/codespaces-start-button.jpg')" alt="Image of the GitHub Codespaces New Codespace button.">
 
 ### Step 3: Wait for Codespaces to Spin Up.
 
@@ -86,7 +86,7 @@ On first start you should see Codespaces executing the `postCreateCommand` in th
 
 Once the `postCreateCommand` is done running, you should see a tab called "Ports" with the number "3" after it.
 
-![Screenshot of the Codespaces Ports tab](/images/codespaces-ports-tab.jpg)
+<img :src="$withBase('/images/codespaces-ports-tab.jpg')" alt="Screenshot of the Codespaces Ports tab.">
 
 This means Lando has successfully started and Codespaces has detected three ports that it can forward for your web browsing pleasure! The three exposed ports should relate to...
 
