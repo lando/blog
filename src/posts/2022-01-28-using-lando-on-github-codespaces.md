@@ -16,12 +16,12 @@ tags:
 
 Are you ready to join us in the cloud?
 
-"Cloud Development" has been the future of development for years. Proponents told us to wait for a world where we could click a single link on a project repository and have a full development environment, from infrastructure to code editor, available on-demand in our browser window. No more waiting for builds! No more debugging local environements! Code on any device, even your iPad!
+"Cloud Development" has been the future of development for years. Proponents told us to wait for a world where we could click a single link on a project repository and have a full development environment, from infrastructure to code editor, available on-demand in our browser window. No more waiting for builds! No more debugging local environments! Code on any device, anywhere...even your iPad from that Tahitian beach (because obviously it was just your laptop stopping you from going there).
 
-With GitHub's release of Codespaces, we now have a tempting platform for remote cloud-based development. Read on to learn more about Codespaces and how Lando can help accelerate your pathway to remote development domination!
+With GitHub's release of Codespaces, we now have a tempting platform for remote cloud-based development. Read on to learn more about Codespaces and how Lando can help accelerate your pathway to remote development domination.
 
 
-:warning: After our explorations, it's clear that Codespaces is still and evolving product and our approach to deploying Lando on Codespaces will likely evolve _greatly_ in the future. Make sure you subscribe to the Lando newsletter or [follow our Twitter](https://twitter.com/devwithlando) to get future updates.
+:warning: After our explorations, it's clear that Codespaces is still and evolving product and our approach to deploying Lando on Codespaces will likely evolve _greatly_ in the future. Make sure you subscribe to the Lando newsletter (see form at the bottom of this post) or [follow our Twitter](https://twitter.com/devwithlando) to get future updates.
 
 ## What is GitHub Codespaces?
 
@@ -29,7 +29,7 @@ In a nutshell, Codespaces gives you a flexible VM environment that VSCode access
 
 Because all of these ideas belong to VSCode, you can use these same `.devcontainer` setups to develop locally (look for a future article). Codespaces simply gives you easy-to-use remote infrastructure running on GitHub's Azure cloud (fear not, you need know nothing about Azure).
 
-## Codespaces sounds cool. How does Lando help?
+## Codespaces Sounds Cool. How Does Lando Help?
 
 Codespaces is great, but it's largely a blank slate. Setting up infrastructure on Codespaces is basically the same as setting it up on your computer or a VM; it requires knowledge of Docker and a willingness to get dirty with DevOps.
 
@@ -66,7 +66,7 @@ Once Codespaces is enabled, you'll see a "Codespaces" tab when you click on the 
 
 ### Step 2: Fork the Demo Repo
 
-For our [`drupal-launcher`](https://github.com/lando/drupal-launcher) repo. If you've successfully enabled Codespaces, you should be able to either click on the green "Code" button in your new repo and create a Codespace or visit `https://github.com/[YOUR-GITHUB-USER]/drupal-launcher/codespaces`.
+Fork our [drupal-dev-environment](https://github.com/lando/drupal-dev-environment) repo. If you've successfully enabled Codespaces, you should be able to either click on the green "Code" button in your new repo and create a Codespace or visit `https://github.com/[YOUR-GITHUB-USER]/drupal-dev-environment/codespaces`.
 
 ### Step 3: Wait for Codespaces to Spin Up.
 
@@ -78,13 +78,9 @@ The Codespaces build process looks something like this:
 4. Boots up VSCode in browser (should validate whether features finish before this happens)
 5. Continues running `postCreateCommand`/other commands defined in `devcontainer.json`
 
-On first start, it's possible that you'll see Codespaces executing the `postCreateCommand` in the terminal window. This command is defined in our demo `devcontainer.json`; it starts Lando, runs composer install, and install drush.
+On first start, it's possible that you'll probably see Codespaces executing the `postCreateCommand` in the terminal window. This command is defined in our demo `devcontainer.json`; it starts Lando, runs composer install, and install drush.
 
-### Step 4: Run `lando start`
-
-Once your Codespaces environment is ready, run `lando start` in the provided terminal.
-
-### Step 5: Visit Your Site
+### Step 4: Visit Your Site
 
 Once the `postCreateCommand` is done running, you should see a tab called "Ports" with the number "3" after it. This means Lando has successfully started and Codespaces has detected three ports that it can forward for your web browsing pleasure! The three exposed ports should relate to...
 
@@ -98,30 +94,36 @@ Note that these ports are currently marked as "private", which means that you mu
 
 #### Notes on Port Forwarding
 
-You may notice that Lando's traeffic proxy has been disabled, IE that the "nice URLs" Lando generates when run locally (ex: myproject.lndo.site) aren't produced. Codespaces [has issues forwarding non-localhost ports](https://github.com/github/feedback/discussions/9420) and the benefit of Lando's proxy is somewhat negated by Codespace's forwarding feature, so we've decided that it's simpler to disable it.
+You may notice that Lando's Traefik proxy has been disabled, IE that the "nice URLs" Lando generates when run locally (ex: myproject.lndo.site) aren't produced. Codespaces [has issues forwarding non-localhost ports](https://github.com/github/feedback/discussions/9420) and the benefit of Lando's proxy is somewhat negated by Codespace's forwarding feature, so we've decided that it's simpler to disable it.
 
-We've also configured the default .lando.yml to disable the appserver's SSL. This is primarily for ease-of-use. Codespaces doesn't automatically recognize Lando's SSL ports as HTTPS, so to use them a user would need to configure them as "HTTPS" in the Ports tab on Codespaces manually.
+We've also configured the default `.lando.yml` to disable the appserver's SSL. This is primarily for ease-of-use. Codespaces doesn't automatically recognize Lando's SSL ports as HTTPS, so to use them a user would need to configure them as "HTTPS" in the Ports tab on Codespaces manually.
 
-Since GitHub encrypts traffic at its edge you can still enjoy an SSL connection, but if you have a use-case that demands SSL (say containers communicating with each other via SSL) or have security concerns, you'll want to remove these lines from the Landofile and may need to do additional Codespaces configuration:
+Since GitHub encrypts traffic at its edge you can still enjoy an SSL connection, but if you have a use case that demands SSL (say containers communicating with each other via SSL) or have security concerns, you'll want to remove these lines from the Landofile and may need to do additional Codespaces configuration:
 
 ```
   appserver:
     ssl: false
 ```
 
-## Codespaces Ups-and-Downs
+## Codespaces Criticisms
 
 Overall, we're very impressed with what GitHub/Microsoft have achieved with Codespaces. This feels like a comprehensive effort to create a future of development that is device agnostic, allowing developers to run projects using any infrastructure. However, it's clear that these are still early days for Codespaces. A few things we're looking forward to seeing improved:
 
 ### 1. Build Performance
 Currently it's difficult/impossible to pre-install containers on your Codespaces environment. This means that, once you build your Codespaces environment, you then have to run `lando start` and Lando will pull all the necessary Docker images, which takes time. Having a way to prebuild entire environments would vastly speed up spin-up...and indeed this seems to be a [forthcoming feature](https://docs.github.com/en/codespaces/customizing-your-codespace/prebuilding-codespaces-for-your-project).
 
-### 2. Inability to designate ports as SSL in devcontainer.json
+### 2. Inability to Designate Ports as SSL in devcontainer.json
 
 Ports other than `:443` aren't automatically identified as SSL by Codespaces, which means that all of Lando's SSL-powered ports show up with errors if you try to visit them. We've disabled SSL in our demo repo config; it would be nice to see Codespaces allow you to designate non `:443` ports as SSL in the future.
 
 ### 3. Stabilization of Dev Container Features
 
 The ability to have highly-reusable Lego block-like scripts to construct dev containers on the fly is great, akin to GitHub's extensive Actions ecosystem, but the concept is clearly still a work-in-progress.
+
+### 4. Lack of a Spin-up Link
+
+It's weird that on GitHub's own platform, I have to explain to you how to enable Codespaces and find the button to create a new one, whereas competitors (*cough* Gitpod) provide links that start environments in a single click.
+
+## What Do You Think?
 
 We're curious to hear about your Codespaces experiences! Give [our demo repo a try](https://github.com/lando/drupal-dev-environment) and joing the [Lando Slack](https://launchpass.com/devwithlando) to tell us how it went.
