@@ -14,7 +14,7 @@ tags:
   - lando
 ---
 
-Local Docker based development has become a main-stay for most developers today.  One issue typically is you need a decent machine to be able to run said solution efficiently on your machine.  Cloud development has come into the forefront as a way to get around upgrading your machine just to handle your development tasks.  
+Local Docker based development has become a mainstay for most developers today.  However, Docker requires a decent machine to run efficiently, and performance problems plague developers running virtualized Docker instances on Mac and Windows.  Cloud development has come into the forefront as a way to get around upgrading your machine to handle your development tasks.  
 
 [Gitpod](https://www.gitpod.io/) is one cloud solution that has become widely used by many developers.  It allows developers to easily hook up a remote development environment from any computer to get the job done.  Keep reading to see how you can hook up your Lando setup with Gitpod.
 
@@ -22,7 +22,7 @@ Local Docker based development has become a main-stay for most developers today.
 
 ## What is Gitpod?
 
-Gitpod allows users to spin up remote VM environments that utilizes VSCode or any Jetbrains IDE to develop in their browser.  Using a simple [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file) configuration file, you can quickly get up and running with a remote environment.  I would read through the docs to get familiar with this file as it is the base for all your Gitpod needs. 
+Gitpod allows users to spin up remote VM environments that utilize VSCode or any Jetbrains IDE to develop in their browser.  Using a simple [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file) configuration file, you can quickly get up and running with a remote environment.  I would read through the docs to get familiar with this file as it is the base for all your Gitpod needs. 
 
 We have also spent some time developing a universally easy way to get your Lando projects going within Gitpod as well.  It won't take too long to hook up Lando to your Gitpod environment. 
 
@@ -40,17 +40,17 @@ For our [`drupal-dev-environment`](https://github.com/lando/drupal-dev-environme
 
 ### Step 3: Wait for Gitpod to spin up.
 
-The initial build will be very slow (10 mins+), so go have a delicious snack in the interim.  Gitpod uses a concept of [prebuilds](https://www.gitpod.io/docs/prebuilds#prebuilds) which will be built during the initial start.  Dependent on how you setup your config, this may be very quick, or will take quite sometime.
+The initial build will be very slow (10 mins+), so go have a delicious snack in the interim.  Gitpod uses a concept of [prebuilds](https://www.gitpod.io/docs/prebuilds#prebuilds) which will be built during the initial start.  Depending on your config, this may be very quick, or will take quite sometime.
 
-Once Gitpod builds your environment, you will be launches into a VSCode web browser.  Our demo repo will then launch a preview browser after the site demo finishes installs.  
+Once Gitpod builds your environment, you will be launched into a VSCode instance on your web browser.  Our demo repo will then launch a preview browser after the site demo finishes installs.  
 
-From here, you can code away and do whatever you want as your demo site is good to go.
+From here, you can code away and do whatever you want. Your demo site is good to go!
 
 ## Using Lando in Gitpod
 
-If you are not going to use our demo repo, then setting up Lando within Gitpod is very straight forward.  We created a [Dockerhub image](https://hub.docker.com/layers/devwithlando/gitpod/1/images/sha256-48d6443c6cac102771b4514de70067f0cc97fec20f9cdbad03658bee446324d7?context=explore) with the latest version of Lando installed and configured for you.
+If you are not going to use our demo repo, we've created a [Dockerhub image](https://hub.docker.com/layers/devwithlando/gitpod/1/images/sha256-48d6443c6cac102771b4514de70067f0cc97fec20f9cdbad03658bee446324d7?context=explore) with the latest version of Lando installed and configured for you to use on your own projects.
 
-The bare minimum you need to get going in your config file is:
+The bare minimum you need to get going in your `.gitpod.yml` config file is:
 
 ```
 image: devwithlando/gitpod:1
@@ -71,7 +71,7 @@ It seems the proxy can cause weird issues from time to time.  So right now, we d
 
 ### Localhost
 
-Right now, Gitpod will only launch http based urls.  If you want to launch your preview browser dynamically, you can use the command we [defined in our demo repo](https://github.com/lando/drupal-dev-environment/blob/9.4.x/.gitpod.yml#L15) to do so.  If you do have multiple services that use the localhost url (like when using PHPMyAdmin), you will need to change which url via `.urls[0]` to the right index number.  Usually it is only `.urls[0]` or `.urls[1]`.  
+Right now, Gitpod will only launch http urls.  If you want to launch your preview browser dynamically, you can use the command we [defined in our demo repo](https://github.com/lando/drupal-dev-environment/blob/9.4.x/.gitpod.yml#L15) to do so.  If you do have multiple services that use the localhost url (like when using PHPMyAdmin), you will need to change which url via `.urls[0]` to the right index number.  Usually it is only `.urls[0]` or `.urls[1]`.  
 
 OR you can just click the port number in the Gitpod UI and open a browser manually.
 
@@ -85,6 +85,6 @@ ERROR: for database  Cannot start service database: network 920aa31515a0eb982ce8
 
 To address this you will need to do a `lando destroy` and '`lando rebuild` to fix it.  
 
-You can avoid this all together it seems, but just not putting `lando start` in your `init` command at the moment.  Instead you can just pull the docker images locally in the `init` step like [we do in our demo](https://github.com/lando/drupal-dev-environment/blob/9.4.x/.gitpod.yml#L6) to help speed up build times.
+You can avoid this by not putting `lando start` in your .gitpod.yml file's `init` command at the moment.  Instead you can just pull the docker images locally in the `init` step like [we do in our demo](https://github.com/lando/drupal-dev-environment/blob/9.4.x/.gitpod.yml#L6) to help speed up build times.
 
-We're curious to hear about your Gitpod experiences! Give [our demo repo a try](https://github.com/lando/drupal-dev-environment) and joining the [Lando Slack](https://launchpass.com/devwithlando) to tell us how it went.
+We're curious to hear about your Gitpod experiences! Give [our demo repo a try](https://github.com/lando/drupal-dev-environment) and join the [Lando Slack](https://launchpass.com/devwithlando) to tell us how it went.
