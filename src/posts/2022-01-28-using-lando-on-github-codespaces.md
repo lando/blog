@@ -56,7 +56,7 @@ You probably also noticed the "docker-in-docker" feature in `devcontainer.json`.
 
 Lando actually runs within this dev container using a "docker-in-docker" architectural approach. This means that we install a version of Docker _inside_ the Devcontainer. This approach has some potential downsides, but seems to be the most stable/easy way to run Lando (and indeed any multi-container dev setups) in Codespaces right now...stay tuned for updates as we evolve our approach.
 
-## Getting Started Codespaces and Lando
+## Getting Started w/Codespaces and Lando
 
 ### Step 1: Enable Codespaces for Your User/Org
 
