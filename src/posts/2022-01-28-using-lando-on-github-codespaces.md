@@ -68,6 +68,8 @@ Once Codespaces is enabled, you'll see a "Codespaces" tab when you click on the 
 
 Fork our [drupal-dev-environment](https://github.com/lando/drupal-dev-environment) repo. If you've successfully enabled Codespaces, you should be able to either click on the green "Code" button in your new repo and create a Codespace or visit `https://github.com/[YOUR-GITHUB-USER]/drupal-dev-environment/codespaces`.
 
+![Image of the GitHub Codespaces New Codespace button](/images/codespaces-start-button.jpg)
+
 ### Step 3: Wait for Codespaces to Spin Up.
 
 The Codespaces build process looks something like this:
@@ -78,11 +80,15 @@ The Codespaces build process looks something like this:
 4. Boots up VSCode in browser (should validate whether features finish before this happens)
 5. Continues running `postCreateCommand`/other commands defined in `devcontainer.json`
 
-On first start, it's possible that you'll probably see Codespaces executing the `postCreateCommand` in the terminal window. This command is defined in our demo `devcontainer.json`; it starts Lando, runs composer install, and install drush.
+On first start you should see Codespaces executing the `postCreateCommand` in the terminal window. This command is defined in our demo `devcontainer.json`; it starts Lando, runs composer install, and install drush.
 
 ### Step 4: Visit Your Site
 
-Once the `postCreateCommand` is done running, you should see a tab called "Ports" with the number "3" after it. This means Lando has successfully started and Codespaces has detected three ports that it can forward for your web browsing pleasure! The three exposed ports should relate to...
+Once the `postCreateCommand` is done running, you should see a tab called "Ports" with the number "3" after it.
+
+![Screenshot of the Codespaces Ports tab](/images/codespaces-ports-tab.jpg)
+
+This means Lando has successfully started and Codespaces has detected three ports that it can forward for your web browsing pleasure! The three exposed ports should relate to...
 
 - Your appserver (aka where you can see the website)
 - MySQL
