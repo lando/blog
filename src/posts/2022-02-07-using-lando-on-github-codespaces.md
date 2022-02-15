@@ -133,3 +133,5 @@ It's weird that on GitHub's own platform, I have to explain to you how to enable
 ## What Do You Think?
 
 We're curious to hear about your Codespaces experiences! Give [our demo repo a try](https://github.com/lando/drupal-dev-environment) and joing the [Lando Slack](https://launchpass.com/devwithlando) to tell us how it went.
+
+And if you're a visual learner, you can check out this short intro video I did on using Gitpod with Lando: [https://www.youtube.com/watch?v=g0hcRb5WVb0](https://www.youtube.com/watch?v=g0hcRb5WVb0)

@@ -88,3 +88,5 @@ To address this you will need to do a `lando destroy` and '`lando rebuild` to fi
 You can avoid this by not putting `lando start` in your .gitpod.yml file's `init` command at the moment.  Instead you can just pull the docker images locally in the `init` step like [we do in our demo](https://github.com/lando/drupal-dev-environment/blob/9.4.x/.gitpod.yml#L6) to help speed up build times.
 
 We're curious to hear about your Gitpod experiences! Give [our demo repo a try](https://github.com/lando/drupal-dev-environment) and join the [Lando Slack](https://launchpass.com/devwithlando) to tell us how it went.
+
+And if you're a visual learner, you can check out this short intro video I did on using Gitpod with Lando: [https://www.youtube.com/watch?v=ZaXI6ooY8Ak](https://www.youtube.com/watch?v=ZaXI6ooY8Ak)
