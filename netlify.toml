@@ -21,19 +21,14 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000"
 
-# Rewrites
-[[redirects]]
-  from = "/"
-  to = "/blog"
-  status = 200
-[[redirects]]
-  from = "/blog/*"
-  to = "/:splat"
-  status = 200
-
 # Redirect to canonical location
 [[redirects]]
   from = "https://blog.devwithlando.io"
+  to = "https://lando.dev/blog"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://blog.devwithlando.io/"
   to = "https://lando.dev/blog"
   status = 301
   force = true
@@ -48,8 +43,18 @@
   status = 301
   force = true
 [[redirects]]
+  from = "https://blog.lando.dev/"
+  to = "https://lando.dev/blog"
+  status = 301
+  force = true
+[[redirects]]
   from = "https://blog.lando.dev/*"
   to = "https://lando.dev/blog/:splat"
+  status = 301
+  force = true
+ [[redirects]]
+  from = "https://blog.lndo.io/"
+  to = "https://lando.dev/blog"
   status = 301
   force = true
 [[redirects]]
@@ -62,3 +67,13 @@
   to = "https://lando.dev/blog/:splat"
   status = 301
   force = true
+
+# Rewrites
+[[redirects]]
+  from = "/"
+  to = "/blog"
+  status = 200
+[[redirects]]
+  from = "/blog/*"
+  to = "/:splat"
+  status = 200
