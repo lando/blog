@@ -19,7 +19,7 @@
 [[headers]]
   for = "/images/*"
   [headers.values]
-	  Cache-Control = "public, max-age=31536000"
+    Cache-Control = "public, max-age=31536000"
 
 # Rewrites
 [[redirects]]
@@ -30,3 +30,20 @@
   from = "/blog/*"
   to = "/:splat"
   status = 200
+
+# Redirect to canonical location
+[[redirects]]
+  from = "https://blog.devwithlando.io/*"
+  to = "https://lando.dev/blog/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://blog.lando.dev/*"
+  to = "https://lando.dev/blog/:splat"
+  status = 301
+  force = true
+[[redirects]]
+  from = "https://blog.lndo.io/*"
+  to = "https://lando.dev/blog/:splat"
+  status = 301
+  force = true
