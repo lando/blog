@@ -12,32 +12,20 @@
     "url": "https://github.com/lando/sites/blog"
   },
   "scripts": {
-    "dev": "vuepress dev .",
+    "dev": "vuepress dev . --clean-cache --clean-temp",
     "build": "vuepress build .",
     "lint": "eslint  --quiet --ext .js,.vue --config .eslintrc.json .vuepress",
     "release": "bump --prompt --tag --all --push"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
-    "@vuepress/plugin-blog": "^1.9.2",
-    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
-    "@vuepress/theme-blog": "^2.0.0",
-    "axios": "^0.21.2",
+    "@lando/vuepress-theme-default-plus": "lando/vuepress-theme-default-plus#main",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-vue": "^8.5.0",
     "version-bump-prompt": "^4.2.1",
-    "vue-feather-icons": "^5.0.0",
-    "vue-lazyload": "^1.3.3",
-    "vue2-google-maps": "^0.10.7",
-    "vuepress": "^1.8.2",
-    "vuepress-plugin-autometa": "https://github.com/thinktandem/vuepress-plugin-autometa",
-    "vuepress-plugin-canonical": "^1.0.0",
-    "vuepress-plugin-container": "^2.1.2",
-    "vuepress-plugin-feed": "^0.1.8",
-    "vuepress-plugin-robots": "^1.0.1",
-    "vuepress-plugin-sitemap": "https://github.com/thinktandem/vuepress-plugin-sitemap"
+    "vuepress": "^2.0.0-beta.36"
   },
   "dependencies": {}
 }

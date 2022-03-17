@@ -3,6 +3,8 @@ title: "Journey to Lando: Mistakes, Pivots and Vindication"
 description: After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we've finally made local dev great again with Lando
 summary: After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we've finally made local dev great again with Lando
 date: 2017-10-24
+sidebar: false
+blog: true
 original: https://thinktandem.io/blog/2017/10/24/journey-to-lando-mistakes-pivots-and-vindication/
 
 author: Mike Pirog

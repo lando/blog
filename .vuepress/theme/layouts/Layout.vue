@@ -1,29 +1,7 @@
 <template>
-  <div>
-    <PostList
-      :title="tagTitle"
-      v-if="$pagination"
-    />
-    <Content v-else />
-  </div>
+  <ParentLayout />
 </template>
 
-<script>
-import PostList from '@theme/components/PostList.vue';
-
-export default {
-  components: {PostList},
-  computed: {
-    tagTitle() {
-      if (!this.$currentTag) {
-        return 'all';
-      } else {
-        return this.$currentTag.key;
-      }
-    },
-  },
-};
+<script setup>
+import ParentLayout from '@lando/vuepress-theme-default-plus/layouts/Layout.vue';
 </script>
-
-<style lang="stylus">
-</style>

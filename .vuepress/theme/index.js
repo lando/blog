@@ -1,29 +1,22 @@
-module.exports = {
-  extend: '@vuepress/theme-blog',
-  plugins: [
-    ['container', {
-      type: 'thumbnail',
-      defaultTitle: '',
-    }],
-    ['container', {
-      type: 'caption',
-      defaultTitle: '',
-    }],
-    ['container', {
-      type: 'quote',
-      defaultTitle: '',
-    }],
-    ['container', {
-      type: 'tip',
-      defaultTitle: 'TIP',
-    }],
-    ['container', {
-      type: 'warning',
-      defaultTitle: 'WARNING',
-    }],
-    ['container', {
-      type: 'danger',
-      defaultTitle: 'DANGER!',
-    }],
-  ],
+const {path} = require('@vuepress/utils');
+
+module.exports = (options, app) => {
+  return {
+    theme: path.resolve(__dirname, '.'),
+    extends: '@lando/vuepress-theme-default-plus',
+    alias: {
+      // '@theme/Navbar.vue': path.resolve(__dirname, 'components', 'NavbarCustom.vue'),
+      // '@theme/ToggleSidebarButton.vue': path.resolve(__dirname, 'components', 'ToggleSidebarButtonCustom.vue'),
+    },
+    darkMode: false,
+    layouts: path.resolve(__dirname, 'layouts'),
+    // plugins: [
+    //   ['@vuepress/register-components',
+    //     {
+    //       componentsDir: path.resolve(__dirname, './components'),
+    //       componentsPatterns: ['*.vue', '**/*.vue'],
+    //     },
+    //   ],
+    // ],
+  };
 };
