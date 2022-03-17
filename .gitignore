@@ -24,6 +24,19 @@ node_modules
 env.yaml
 env.yml
 lando.env
+.lando.local.yml
 
-# docs
-blog/_site
+# Build dirs
+build
+dist
+_docs3
+
+# coverage reporting
+.nyc_output
+coverage/
+
+# Vuepress
+.temp
+.cache
+dist
+_site

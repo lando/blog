@@ -1,15 +1,10 @@
-name: Basic Tests
+name: Tests
+
 on:
   pull_request:
-  push:
-    branches:
-      - main
-  release:
-    types:
-      - created
 
 jobs:
-  test:
+  docs-tests:
     runs-on: ${{ matrix.os }}
     env:
       TERM: xterm
@@ -20,7 +15,6 @@ jobs:
         node-version:
           - '14'
     steps:
-
       # Install deps and cache
       # Eventually it would be great if these steps could live in a separate YAML file
       # that could be included in line to avoid code duplication
@@ -42,7 +36,8 @@ jobs:
       - name: Install Yarn dependencies
         run: yarn install --prefer-offline --frozen-lockfile
 
-      - name: Linting
-        run: yarn test
-      - name: Test Builds
-        run: "yarn build"
+      # Run doc tests
+      - name: Lint docs code
+        run: yarn lint
+      - name: Build Docs
+        run: yarn build

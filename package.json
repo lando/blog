@@ -12,23 +12,21 @@
     "url": "https://github.com/lando/sites/blog"
   },
   "scripts": {
-    "build": "vuepress build src -d _site",
-    "lint": "eslint --quiet --no-ignore scripts",
-    "release": "bump --prompt --tag --all --push",
-    "dev": "vuepress dev --temp /tmp/lando-blog --cache /tmp/lando-blog-cache --port 8011 src",
-    "test": "yarn lint"
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
+    "lint": "eslint  --quiet --ext .js,.vue --config .eslintrc.json .vuepress",
+    "release": "bump --prompt --tag --all --push"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
     "@vuepress/plugin-blog": "^1.9.2",
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "@vuepress/theme-blog": "^2.0.0",
     "axios": "^0.21.2",
-    "eslint": "^6.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
     "eslint-config-google": "^0.9.1",
-    "eslint-plugin-vue": "^5.2.3",
-    "js-yaml": "^3.14.0",
-    "lodash": "^4.17.21",
-    "mkdirp": "^1.0.4",
+    "eslint-plugin-vue": "^8.5.0",
     "version-bump-prompt": "^4.2.1",
     "vue-feather-icons": "^5.0.0",
     "vue-lazyload": "^1.3.3",
@@ -39,7 +37,7 @@
     "vuepress-plugin-container": "^2.1.2",
     "vuepress-plugin-feed": "^0.1.8",
     "vuepress-plugin-robots": "^1.0.1",
-    "vuepress-plugin-sitemap": "https://github.com/thinktandem/vuepress-plugin-sitemap",
-    "yargs": "^16.1.0"
-  }
+    "vuepress-plugin-sitemap": "https://github.com/thinktandem/vuepress-plugin-sitemap"
+  },
+  "dependencies": {}
 }
