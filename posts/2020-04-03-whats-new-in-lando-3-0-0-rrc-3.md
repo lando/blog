@@ -1,28 +1,21 @@
 ---
 title: What's new in Lando 3.0.0-rrc.3
-metaTitle: What's new in Lando 3.0.0-rrc.3 | Lando
-description: We've added release channels, an experimental flag, Pantheon improvements a Docker update and various bug fixes
-date: 2020-04-03
-original:
+byline: We've added release channels, an experimental flag, Pantheon improvements a Docker update and various bug fixes
+blog: true
 
-author: Mike Pirog
-pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
-link: https://twitter.com/pirogcommamike
-location: Undisclosed Location
+date: 2020-04-03
+updated:
+  timestamp: 1585886400000
+
+author:
+  name: Mike Pirog
+  pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
+  link: ./../tag/mike-pirog.html
+  location: Siberia
 
 tags:
-- lando
-
-feed:
-  enable: true
-  author:
-    - name: Mike Pirog
-      email: alliance@lando.dev
-      link: https://twitter.com/pirogcommamike
-  contributor:
-    - name: Mike Pirog
-      email: alliance@lando.dev
-      link: https://twitter.com/pirogcommamike
+  - lando
+  - Mike Pirog
 ---
 
 As we continue to march towards our official release on May 4, 2020 we wanted to keep you up to date with some of the changes we are making along the way. Here are the highlights for 3.0.0-rrc.3.

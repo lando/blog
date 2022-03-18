@@ -1,17 +1,21 @@
 ---
 title: Pantheon Localdev Launch
-metaTitle: Pantheon Localdev | Lando
-description: Intuitive Pantheon user interface, combined with raw, unadulterated power of Lando underneath the hood.
-summary: Intuitive Pantheon user interface, combined with raw, unadulterated power of Lando underneath the hood.
-date: 2021-01-26
+byline: Intuitive Pantheon user interface, combined with raw, unadulterated power of Lando underneath the hood.
+blog: true
 
-author: Alec Reynolds
-pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
-link: https://twitter.com/reynoldsalec
-location: Lando Alliance West
+date: 2021-01-26
+updated:
+  timestamp: 1611637200000
+
+author:
+  name: Alec Reynolds
+  pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
+  link: ./../tag/alec-reynolds.html
+  location: Lando Alliance West
 
 tags:
   - lando
+  - Alec Reynolds
 ---
 
 There's no shame in saying it: sometimes even the most hardcore "neckbeard" developer just wants a GUI. A warm, friendly face for an application that we can click around in. Something that doesn't require us to remember esoteric commands or read around a CLI prompt to figure out option flags, especially if you're striving for your [Ballmer Peak](https://xkcd.com/323/). Whether you're a dyed-in-the-wool veteran coder or someone who makes websites out of necessity, a GUI tool can lower your cognitive load so you can focus on more important things.

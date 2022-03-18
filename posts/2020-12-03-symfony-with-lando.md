@@ -1,29 +1,21 @@
 ---
 title: Symfony Development with Lando
-metaTitle: Symfony Development with Lando | Lando
-description: It's official! Symfony support has been baked into Lando!
-summary: Learn how easy it is to develop locally with Symfony and Lando
-date: 2020-12-03
-original:
+byline: Learn how easy it is to develop locally with Symfony and Lando
+blog: true
 
-author: Mike Milano
-pic: https://s.gravatar.com/avatar/78e2002b834641bd69454e28f729ce12
-link: https://github.com/mikemilano
-location: US
+date: 2020-12-03
+updated:
+  timestamp: 1606971600000
+
+author:
+  name: Mike Milano
+  pic: https://s.gravatar.com/avatar/78e2002b834641bd69454e28f729ce12
+  link: ./../tag/mike-milano.html
+  location: America
 
 tags:
-- lando
-
-feed:
-  enable: true
-  author:
-    - name: Mike Milano
-      email: alliance@lando.dev
-      link: https://github.com/mikemilano
-  contributor:
-    - name: Mike Milano
-      email: alliance@lando.dev
-      link: https://github.com/mikemilano
+  - lando
+  - Mike Milano
 ---
 
 As of version `3.0.22`, Lando ships with a Symfony recipe which makes
@@ -75,13 +67,13 @@ That command should result with information related to your new environment. It
 should look somethingn like this:
 
 ```
- NAME            myapp                                               
+ NAME            myapp
  LOCATION        /Users/mmilano/projects/myapp
- SERVICES        appserver, database                                 
- APPSERVER URLS  https://localhost:32826                             
-                 http://localhost:32828                              
-                 http://myapp.lndo.site/                             
-                 https://myapp.lndo.site/               
+ SERVICES        appserver, database
+ APPSERVER URLS  https://localhost:32826
+                 http://localhost:32828
+                 http://myapp.lndo.site/
+                 https://myapp.lndo.site/
 ```
 
 ## Using Symfony Console
@@ -137,18 +129,18 @@ pass: symfony
 dbname: symfony
 ```
 
-Now add these values to the `DATABASE_URL` entry in your `.env` file: 
+Now add these values to the `DATABASE_URL` entry in your `.env` file:
 ```
 DATABASE_URL="mysql://symfony:symfony@database:3306/symfony?serverVersion=5.7"
 ```
 
 Using the database is beyond the scope of this article but the database already
-exists and Doctrine related console commands should work as they do with any other 
+exists and Doctrine related console commands should work as they do with any other
 Symfony environment.
 
 ## What Next?
 
-This demo is pretty simple, but Lando is extremely flexible and can accommodate 
+This demo is pretty simple, but Lando is extremely flexible and can accommodate
 much more complicated stacks. For instance, if your application requires
 Redis, you can reference Lando's [Redis Documentation](https://docs.lando.dev/config/redis.html#supported-versions)
 and add it to `.lando.yml`. Once you change the Lando file, running `lando rebuild`
@@ -156,7 +148,7 @@ will rebuild the stack with Redis. `lando info` will reveal the Redis connection
 
 You're not limited to the services Lando lists. If you have less common or completely
 custom services, use the [Compose](https://docs.lando.dev/config/compose.html) service
-to define any image as you would with Docker Compose. 
+to define any image as you would with Docker Compose.
 
 ## Community Support
 

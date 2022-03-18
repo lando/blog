@@ -1,29 +1,22 @@
 ---
 title: Why your agency or org should sponsor Lando
-metaTitle: Why you should sponsor Lando | Lando
-description: Support your developers and keep them focused on what matters most; achieving your organization's or clients' goals, not solving DevOps problems! And, get your orgs name in front tens of thousands of potential hires and clients while doing it!
-summary: Support your developers and keep them focused on what matters most; achieving your organization or client's goals, not solving DevOps problems! And, get your orgs name in front tens of thousands of potential hires and clients while doing it!
-date: 2020-02-08
-original:
+byline: Support your developers and keep them focused on what matters most; achieving your organization or client's goals, not solving DevOps problems! And, get your orgs name in front tens of thousands of potential hires and clients while doing it!
+blog: true
 
-author: Mike Pirog
-pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
-link: https://twitter.com/pirogcommamike
-location: Providence, RI
+date: 2020-02-08
+updated:
+  timestamp: 1581138000000
+
+author:
+  name: Mike Pirog
+  pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
+  link: ./../tag/mike-pirog.html
+  location: Providence, RI
 
 tags:
-- lando
+  - lando
+  - Mike Pirog
 
-feed:
-  enable: true
-  author:
-    - name: Mike Pirog
-      email: mike@lando.dev
-      link: https://twitter.com/pirogcommamike
-  contributor:
-    - name: Mike Pirog
-      email: mike@lando.dev
-      link: https://twitter.com/pirogcommamike
 ---
 
 Sponsoring Lando is more than just supporting a free and open source local development tool. It's about giving a shit about your developers and giving them the tools they want and need to do their best work. Happy developers are productive and focused developers. And get it for way less than it would cost to build similar tools in-house. Trust us, [we know](/2017/10/24/journey-lando/) :)

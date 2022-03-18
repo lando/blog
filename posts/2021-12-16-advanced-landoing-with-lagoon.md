@@ -1,17 +1,21 @@
 ---
-title: Advanced Lando-ing with Lagoon 
-metaTitle: Advanced Lando-ing with Lagoon | Lando
-description: Tips on build steps, performance tuning, tooling, and other advanced Lando techniques.
-summary: We discuss build steps, performance tuning, tooling, and the future of the Lando project with our friends at Amazee.io.
-date: 2021-12-16 12:00:00
+title: Advanced Lando-ing with Lagoon
+byline: We discuss build steps, performance tuning, tooling, and the future of the Lando project with our friends at Amazee.io.
+blog: true
 
-author: Alec Reynolds
-pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
-link: https://twitter.com/reynoldsalec
-location: Lando Alliance West
+date: 2021-12-16 12:00:00
+updated:
+  timestamp: 1639674000000
+
+author:
+  name: Alec Reynolds
+  pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
+  link: ./../tag/alec-reynolds.html
+  location: Lando Alliance West
 
 tags:
   - lando
+  - Alec Reynolds
 ---
 
 Many users love Lando because of its simplicity: run `lando start` on a project with a Landofile and you're off to the races!

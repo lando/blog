@@ -1,35 +1,25 @@
 ---
 title: "Journey to Lando: Mistakes, Pivots and Vindication"
-description: After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we've finally made local dev great again with Lando
-summary: After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we've finally made local dev great again with Lando
-date: 2017-10-24
-sidebar: false
+byline: After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we've finally made local dev great again with Lando
 blog: true
-original: https://thinktandem.io/blog/2017/10/24/journey-to-lando-mistakes-pivots-and-vindication/
 
-author: Mike Pirog
-pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
-link: https://twitter.com/pirogcommamike
+date: 2017-10-24
+updated:
+  timestamp: 1508880741000
 
-location: San Francisco
+author:
+  name: Mike Pirog
+  pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
+  link: ./../tag/mike-pirog.html
+  location: San Francisco
 
 tags:
-  - case-study
+  - case study
   - devops
   - development
   - lando
   - workflows
-
-feed:
-  enable: true
-  author:
-    - name: Mike Pirog
-      email: alliance@lando.dev
-      link: https://twitter.com/pirogcommamike
-  contributor:
-    - name: Mike Pirog
-      email: alliance@lando.dev
-      link: https://twitter.com/pirogcommamike
+  - Mike Pirog
 ---
 
 When we first started the Kalabox project almost (*sigh*) five years ago we wanted to build a stupid easy local development tool for internal usage at [Kalamuna](https://kalamuna.com). The basic idea was a developer should be able to easily get their [Pantheon](https://pantheon.io) site (Kalamuna was using Pantheon exclusively back then) running locally within 10-15 minutes so they could spend more of their time developing and less of their time wiping away the tears caused by a fickle local setup.
@@ -127,7 +117,7 @@ The Vindication
 ---------------
 
 ::: thumbnail
-![lando](https://thinktandem.io/images/case-studies/lando-screenshot.png "Lando")
+![lando](https://docs.lando.dev/drupal/images/drupal7-extant/landoStart.jpg "Lando")
 ::: caption
 Lando
 :::

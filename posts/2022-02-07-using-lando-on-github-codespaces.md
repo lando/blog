@@ -1,17 +1,21 @@
 ---
-title: Lando on GitHub Codespaces 
-metaTitle: Lando on GitHub Codespaces | Lando
-description: Getting started using Lando to provision your GitHub Codespaces Drupal dev environment.
-summary: An exploration of GitHub Codespaces and guide to using Lando to provision your Codespace for Drupal development.
-date: 2022-02-07 12:00:00
+title: Lando on GitHub Codespaces
+byline: An exploration of GitHub Codespaces and guide to using Lando to provision your Codespace for Drupal development.
+blog: true
 
-author: Alec Reynolds
-pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
-link: https://twitter.com/reynoldsalec
-location: Lando Alliance West
+date: 2022-02-07 12:00:00
+updated:
+  timestamp: 1644253200000
+
+author:
+  name: Alec Reynolds
+  pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
+  link: ./../tag/alec-reynolds.html
+  location: Lando Alliance West
 
 tags:
   - lando
+  - Alec Reynolds
 ---
 
 Are you ready to join us in the cloud?
@@ -61,7 +65,7 @@ Lando actually runs within this dev container using a "docker-in-docker" archite
 ### Step 1: Enable Codespaces for Your User/Org
 
 Codespaces ain't free. To enable it on your account, you need to go to your user (or org) settings and click on the "Billing & plans" sidebar item. Find the Codespaces section and click "update" next to the "monthly spending limit" description. You'll need to enter a non-zero amount. Since we'll be using a small machine that takes less than 20 cents to run per hour, you can safely set this limit at a few dollars.
- 
+
 Once Codespaces is enabled, you'll see a "Codespaces" tab when you click on the "Code" dropdown on any repo within your user or organization, depending on which level you enabled.
 
 ### Step 2: Fork the Demo Repo

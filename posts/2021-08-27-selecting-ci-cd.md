@@ -1,18 +1,22 @@
 ---
 title: Lando and the Gateway to CI/CD
-metaTitle: Lando and the Gateway to CI/CD | Lando
-description: Users often call Lando the "first step" to CI/CD. This post from our friends at BlackMesh helps you take the next step.
-summary: Users often call Lando the "first step" to CI/CD. This post from our friends at BlackMesh helps you take the next step. 
-date: 2021-08-27 12:00:00
+byline: Users often call Lando the "first step" to CI/CD. This post from our friends at BlackMesh helps you take the next step.
+blog: true
 
-author: Alec Reynolds
-pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
-link: https://twitter.com/reynoldsalec
-location: Lando Alliance West
+date: 2021-08-27 12:00:00
+updated:
+  timestamp: 1630080000000
+
+author:
+  name: Alec Reynolds
+  pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
+  link: ./../tag/alec-reynolds.html
+  location: Lando Alliance West
 
 tags:
   - lando
   - devops
+  - Alec Reynolds
 ---
 
 tl;dr If you're evaluating CI/CD services, check out [the guide we wrote with BlackMesh.](https://www.contegix.com/resources/library/cicd-beyond-jenkins)

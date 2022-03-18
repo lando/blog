@@ -1,17 +1,21 @@
 ---
 title: Acquia and Lando (or, The Tale of a Tryst)
-metaTitle: Acquia Cloud Lando Integration | Lando
-description: Today, we're proud to announce that the romance is official. Acquia has sponsored a formal Lando integration.
-summary: Long has the relationship between Acquia and Lando been a love that dare not speak its own name. Today, we're proud to announce that the romance is official - Acquia has sponsored a formal Lando integration.
-date: 2021-03-03 12:00:00
+byline: Long has the relationship between Acquia and Lando been a love that dare not speak its own name. Today, we're proud to announce that the romance is official - Acquia has sponsored a formal Lando integration.
+blog: true
 
-author: Alec Reynolds
-pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
-link: https://twitter.com/reynoldsalec
-location: Lando Alliance West
+date: 2021-03-03 12:00:00
+updated:
+  timestamp: 1614790800000
+
+author:
+  name: Alec Reynolds
+  pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
+  link: ./../tag/alec-reynolds.html
+  location: Lando Alliance West
 
 tags:
   - lando
+  - Alec Reynolds
 ---
 
 For the last year, as Lando has become the go-to local development solution for a wide range of PHP-focused hosting companies, our friends in the Drupal world have been asking: when does Acquia get an integration?

@@ -1,17 +1,21 @@
 ---
 title: Lando and the Rider in Black(Mesh)
-metaTitle: Lando BlackMesh Partnership | Lando
-description: BlackMesh is formally sponsoring Lando's work to help developers everywhere liberate themselves from drudgery.
-summary: I remember the first time I saw BlackMesh. It was DrupalCon North America, 2012. Down the dusty streets of Denver rode a lone figure, dressed in black...
-date: 2021-05-11 12:00:00
+byline: I remember the first time I saw BlackMesh. It was DrupalCon North America, 2012. Down the dusty streets of Denver rode a lone figure, dressed in black...
+blog: true
 
-author: Alec Reynolds
-pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
-link: https://twitter.com/reynoldsalec
-location: Lando Alliance West
+date: 2021-05-11 12:00:00
+updated:
+  timestamp: 1620748800000
+
+author:
+  name: Alec Reynolds
+  pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
+  link: ./../tag/alec-reynolds.html
+  location: Lando Alliance West
 
 tags:
   - lando
+  - Alec Reynolds
 ---
 
 I remember the first time I saw BlackMesh.

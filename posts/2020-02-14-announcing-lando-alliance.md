@@ -1,28 +1,21 @@
 ---
 title: Announcing the Lando Alliance
-metaTitle: Announcing the Lando Alliance | Lando
-description: If you care about making developers lives easier then you should join our movement to liberate developers from the mind forged manacles of dev monotony they can focus on their most important work.
-summary: If you care about making developers lives easier then you should join our movement to liberate developers from the mind forged manacles of dev monotony so they can focus on their most important work.
-date: 2020-02-14
+byline: If you care about making developers lives easier then you should join our movement to liberate developers from the mind forged manacles of dev monotony so they can focus on their most important work.
+blog: true
 
-author: Mike Pirog
-pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
-link: https://twitter.com/pirogcommamike
-location: Undisclosed Alliance HQ
+date: 2020-02-14
+updated:
+  timestamp: 1581656400000
+
+author:
+  name: Mike Pirog
+  pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
+  link: ./../tag/mike-pirog.html
+  location: Undisclosed Alliance HQ
 
 tags:
-- lando
-
-feed:
-  enable: true
-  author:
-    - name: Mike Pirog
-      email: mike@lando.devf
-      link: https://twitter.com/pirogcommamike
-  contributor:
-    - name: Mike Pirog
-      email: mike@lando.dev
-      link: https://twitter.com/pirogcommamike
+  - lando
+  - Mike Pirog
 ---
 
 It's a little hard to believe that we've been building free and open source developer tools for almost 10 years now!

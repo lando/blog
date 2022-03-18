@@ -1,28 +1,21 @@
 ---
 title: Why you should sponsor Lando
-metaTitle: Why you should sponsor Lando | Lando
-summary: Sponsoring Lando is more than just supporting a free and open source local development tool, it's supporting a community of developers dedicated to making development easier for us all.
-description: Sponsoring Lando is more than just supporting a free and open source local development tool, it's supporting a community of developers dedicated to making development easier for us all.
-date: 2020-02-09
+byline: Sponsoring Lando is more than just supporting a free and open source local development tool, it's supporting a community of developers dedicated to making development easier for us all.
+blog: true
 
-author: Mike Pirog
-pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
-link: https://twitter.com/pirogcommamike
-location: Manchvegas, NH
+date: 2020-02-09
+updated:
+  timestamp: 1581224400000
+
+author:
+  name: Mike Pirog
+  pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
+  link: ./../tag/mike-pirog.html
+  location: Manchvegas, NH
 
 tags:
-- lando
-
-feed:
-  enable: true
-  author:
-    - name: Mike Pirog
-      email: mike@lando.dev
-      link: https://twitter.com/pirogcommamike
-  contributor:
-    - name: Mike Pirog
-      email: mike@lando.dev
-      link: https://twitter.com/pirogcommamike
+  - lando
+  - Mike Pirog
 ---
 
 Sponsoring Lando is more than just supporting a free and open source local development tool. It's supporting a community and alliance of developers dedicated to making #devlife easier for us all.

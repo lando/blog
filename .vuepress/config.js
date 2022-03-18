@@ -59,10 +59,11 @@ module.exports = {
     },
     sitemap: true,
     sharedNavbar: [
-      {text: 'Blog', link: 'https://lando.dev/blog/'},
-      {text: 'Support', link: 'https://lando.dev/blog/'},
+      {text: 'Blog', link: '/'},
+      {text: 'Support', link: 'https://lando.dev/support/'},
       {text: 'Docs', link: 'https://docs.lando.dev'},
     ],
+    sidebar: false,
     sidebarHeader: false,
     search: true,
     social: [{
@@ -125,7 +126,7 @@ module.exports = {
     ['link', {rel: 'preconnect', href: '//fonts.googleapis.com'}],
     ['link', {rel: 'preconnect', href: '//fonts.gstatic.com', crossorigin: true}],
     ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap'}],
-    ['link', {rel: 'icon', href: '/images/favicon.png'}],
+    ['link', {rel: 'icon', href: '/favicon.svg'}],
     ['link', {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png'}],
     ['link', {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png'}],
     ['link', {rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png'}],

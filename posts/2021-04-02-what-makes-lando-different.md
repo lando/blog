@@ -1,17 +1,21 @@
 ---
 title: What Makes Lando Different?
-metaTitle: What Makes Lando Different? | Lando
-description: You have many choices for dev tools. What makes Lando different?
-summary: You have many choices for dev tools, particularly for local development. What makes Lando different?
-date: 2021-04-02 12:00:00
+byline: You have many choices for dev tools, particularly for local development. What makes Lando different?
+blog: true
 
-author: Alec Reynolds
-pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
-link: https://twitter.com/reynoldsalec
-location: Lando Alliance West
+date: 2021-04-02 12:00:00
+updated:
+  timestamp: 1617379200000
+
+author:
+  name: Alec Reynolds
+  pic: https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5
+  link: ./../tag/alec-reynolds.html
+  location: Lando Alliance West
 
 tags:
   - lando
+  - Alec Reynolds
 ---
 
 ## 1. Lando Describes Applications, Not Services.

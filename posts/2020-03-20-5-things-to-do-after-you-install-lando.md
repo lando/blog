@@ -1,29 +1,21 @@
 ---
 title: 3 Things to do after you install Lando
-metaTitle: 3 Things to do after you install Lando | Lando
-description: Now that you've got Lando rolling, here are 3 post installation steps to take things to the next level
-summary: Now that you've got Lando rolling, here are 3 post installation steps to take things to the next level
-date: 2020-03-20
-original:
+byline: Now that you've got Lando rolling, here are 3 post installation steps to take things to the next level
+blog: true
 
-author: Atilla Manyon
-pic: https://s.gravatar.com/avatar/b94fb6501cf666caf2b8f47d4e4e3b1c
-link: https://github.com/smutlord
-location: Undisclosed
+date: 2020-03-20
+updated:
+  timestamp: 1584676800000
+
+author:
+  name: Atilla Manyon
+  pic: https://s.gravatar.com/avatar/b94fb6501cf666caf2b8f47d4e4e3b1c
+  link: ./../tag/atilla-manton.html
+  location: Undisclosed
 
 tags:
-- lando
-
-feed:
-  enable: true
-  author:
-    - name: Atilla Manyon
-      email: alliance@lando.dev
-      link: https://github.com/smutlord
-  contributor:
-    - name: Atilla Manyon
-      email: alliance@lando.dev
-      link: https://github.com/smutlord
+  - lando
+  - Atilla Manyon
 ---
 
 ## 1. Allowlist the Lando CA for no SSL warnings

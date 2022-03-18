@@ -1,30 +1,23 @@
 ---
 title: Lando + Drupal Contributions
-metaTitle: Lando + Drupal Contributions | Lando
-description: Using lando to facilitate Drupal core and contrib contributions of code, testing, and reviews.
-date: 2020-06-30
-original: 
+byline: Using lando to facilitate Drupal core and contrib contributions of code, testing, and reviews.
+blog: true
 
-author: Geoff St. Pierre
-pic: https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9
-link: https://twitter.com/serundeputy
-location: Springfield, MA
+date: 2020-06-30
+updated:
+  timestamp: 1593489600000
+
+author:
+  name: Geoff St. Pierre
+  pic: https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9
+  link: ./../tag/geoff-st-pierre.html
+  location:  Springfield, MA
 
 tags:
-- devops
-- development
-- lando
-
-feed:
-  enable: true
-  author:
-    - name: Geoff St. Pierre
-      email: alliance@lando.dev
-      link: https://twitter.com/serundeputy
-  contributor:
-    - name: Geoff St. Pierre
-      email: alliance@lando.dev
-      link: https://twitter.com/serundeputy
+  - devops
+  - development
+  - lando
+  - Geoff St. Pierre
 ---
 
 ## Why?
@@ -69,7 +62,7 @@ to trigger getting the Drupal source code and installation.
 :::
 
 ```bash
-lando rebuild -y 
+lando rebuild -y
 ```
 
 This will pull in the drupal source code from the `8.8.x` branch, run `composer install` to get dependencies, install Drupal, enable `simpletest` module, and provide us with a one time login link (`uli`).
@@ -79,20 +72,20 @@ After `rebuild` completes you should see something similar to this:
 ```bash
    ___                      __        __        __     __        ______
   / _ )___  ___  __ _  ___ / /  ___ _/ /_____ _/ /__ _/ /_____ _/ / / /
- / _  / _ \/ _ \/  ' \(_-</ _ \/ _ `/  '_/ _ `/ / _ `/  '_/ _ `/_/_/_/ 
-/____/\___/\___/_/_/_/___/_//_/\_,_/_/\_\\_,_/_/\_,_/_/\_\\_,_(_|_|_)  
-                                                                       
+ / _  / _ \/ _ \/  ' \(_-</ _ \/ _ `/  '_/ _ `/ / _ `/  '_/ _ `/_/_/_/
+/____/\___/\___/_/_/_/___/_//_/\_,_/_/\_\\_,_/_/\_,_/_/\_\\_,_(_|_|_)
+
 
 Your app has started up correctly.
 Here are some vitals:
 
- NAME            drupal-contributions                           
- LOCATION        /home/gff/code/drupal-ops/drupal-contributions 
- SERVICES        appserver, database                            
- APPSERVER URLS  https://localhost:33147                        
-                 http://localhost:33148                         
-                 http://drupal-contributions.lndo.site/         
-                 https://drupal-contributions.lndo.site/  
+ NAME            drupal-contributions
+ LOCATION        /home/gff/code/drupal-ops/drupal-contributions
+ SERVICES        appserver, database
+ APPSERVER URLS  https://localhost:33147
+                 http://localhost:33148
+                 http://drupal-contributions.lndo.site/
+                 https://drupal-contributions.lndo.site/
 ```
 
 and the `web` directory should be populated with the Drupal source code.
@@ -113,7 +106,7 @@ To revert the patch:
 lando revert 2962649-10.patch
 ```
 
-This way we can `apply` and `revert` as many times as we want/need to during our testing. 
+This way we can `apply` and `revert` as many times as we want/need to during our testing.
 
 To test this issue first add a file field to a content type say the page content type at `/admin/structure/types/manage/page/fields`. Now add a `page` node at `/admin/content/add/page` and add a text file to the file field you just made.
 

@@ -10,13 +10,32 @@ module.exports = (options, app) => {
     },
     darkMode: false,
     layouts: path.resolve(__dirname, 'layouts'),
-    // plugins: [
-    //   ['@vuepress/register-components',
-    //     {
-    //       componentsDir: path.resolve(__dirname, './components'),
-    //       componentsPatterns: ['*.vue', '**/*.vue'],
-    //     },
-    //   ],
-    // ],
+    plugins: [
+      ['@vuepress/container',
+        {
+          type: 'caption',
+          defaultTitle: '',
+        },
+      ],
+      ['@vuepress/container',
+        {
+          type: 'thumbnail',
+          defaultTitle: '',
+        },
+      ],
+      ['@vuepress/plugin-palette',
+        {
+          preset: 'sass',
+          userStyleFile: path.resolve(__dirname, 'styles', 'index.scss'),
+          userPaletteFile: path.resolve(__dirname, 'styles', 'palette.scss'),
+        },
+      ],
+      ['@vuepress/register-components',
+        {
+          componentsDir: path.resolve(__dirname, 'components'),
+          componentsPatterns: ['*.vue', '**/*.vue'],
+        },
+      ],
+    ],
   };
 };

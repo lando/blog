@@ -1,18 +1,22 @@
 ---
 title: Lando + Hugo [+ ARM]
-metaTitle: Lando + Hugo [+ ARM] | Lando
-description: Developing a static Hugo site with Lando and a team on varying chipsets. 
-summary: Developing a static Hugo site with lando and a team on varying chipsets.
-date: 2021-08-27 12:30:00
+byline: Developing a static Hugo site with lando and a team on varying chipsets.
+blog: true
 
-author: Geoff St. Pierre
-pic: https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9
-link: https://twitter.com/serundeputy
-location: Lando Alliance East
+date: 2021-08-27 12:30:00
+updated:
+  timestamp: 1630081800000
+
+author:
+  name: Geoff St. Pierre
+  pic: https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9
+  link: ./../tag/geoff-st-pierre.html
+  location: Lando Alliance East
 
 tags:
   - lando
   - devops
+  - Geoff St. Pierre
 ---
 
 tl;dr Developing a static Hugo site with Lando and a team on varying chipsets.

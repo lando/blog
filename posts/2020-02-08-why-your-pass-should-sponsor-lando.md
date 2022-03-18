@@ -1,28 +1,21 @@
 ---
 title: Why your PaaS or dev tool should sponsor Lando
-metaTitle: Why your PaaS or dev tool should sponsor Lando | Lando
-description: If you've built something on top of Lando then you want to make sure Lando has a strong foundation and you're coordinating roadmaps with us. If your competitor has a Lando integration then you are missing out on a big market!
-summary: If you've built something on top of Lando then you want to make sure Lando has a strong foundation and you're coordinating roadmaps with us. If your competitor has a Lando integration then you are missing out on a big market!
-date: 2020-02-07
+byline: If you've built something on top of Lando then you want to make sure Lando has a strong foundation and you're coordinating roadmaps with us. If your competitor has a Lando integration then you are missing out on a big market!
+blog: true
 
-author: Mike Pirog
-pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
-link: https://twitter.com/pirogcommamike
-location: Boston
+date: 2020-02-07
+updated:
+  timestamp: 1581051600000
+
+author:
+  name: Mike Pirog
+  pic: https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb
+  link: ./../tag/mike-pirog.html
+  location: Boston
 
 tags:
-- lando
-
-feed:
-  enable: true
-  author:
-    - name: Mike Pirog
-      email: mike@lando.dev
-      link: https://twitter.com/pirogcommamike
-  contributor:
-    - name: Mike Pirog
-      email: mike@lando.dev
-      link: https://twitter.com/pirogcommamike
+  - lando
+  - Mike Pirog
 ---
 
 Sponsoring Lando is more than just supporting a free and open source local development tool.
