@@ -3,7 +3,7 @@ title: Why your PaaS or dev tool should sponsor Lando
 byline: If you've built something on top of Lando then you want to make sure Lando has a strong foundation and you're coordinating roadmaps with us. If your competitor has a Lando integration then you are missing out on a big market!
 blog: true
 
-date: 2020-02-07
+path: 2020-02-07
 updated:
   timestamp: 1581051600000
 

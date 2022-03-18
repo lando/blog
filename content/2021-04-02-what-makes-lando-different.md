@@ -3,7 +3,7 @@ title: What Makes Lando Different?
 byline: You have many choices for dev tools, particularly for local development. What makes Lando different?
 blog: true
 
-date: 2021-04-02 12:00:00
+path: 2021-04-02 12:00:00
 updated:
   timestamp: 1617379200000
 

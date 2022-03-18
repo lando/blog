@@ -3,7 +3,7 @@ title: What's new in Lando 3.0.0-rrc.3
 byline: We've added release channels, an experimental flag, Pantheon improvements a Docker update and various bug fixes
 blog: true
 
-date: 2020-04-03
+path: 2020-04-03
 updated:
   timestamp: 1585886400000
 

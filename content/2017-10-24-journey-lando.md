@@ -3,7 +3,7 @@ title: "Journey to Lando: Mistakes, Pivots and Vindication"
 byline: After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we've finally made local dev great again with Lando
 blog: true
 
-date: 2017-10-24
+path: 2017-10-24
 updated:
   timestamp: 1508880741000
 

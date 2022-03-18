@@ -3,7 +3,7 @@ title: Announcing the Lando Alliance
 byline: If you care about making developers lives easier then you should join our movement to liberate developers from the mind forged manacles of dev monotony so they can focus on their most important work.
 blog: true
 
-date: 2020-02-14
+path: 2020-02-14
 updated:
   timestamp: 1581656400000
 

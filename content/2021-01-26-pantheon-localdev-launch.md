@@ -3,7 +3,7 @@ title: Pantheon Localdev Launch
 byline: Intuitive Pantheon user interface, combined with raw, unadulterated power of Lando underneath the hood.
 blog: true
 
-date: 2021-01-26
+path: 2021-01-26
 updated:
   timestamp: 1611637200000
 

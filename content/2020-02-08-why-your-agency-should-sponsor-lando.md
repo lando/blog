@@ -3,7 +3,7 @@ title: Why your agency or org should sponsor Lando
 byline: Support your developers and keep them focused on what matters most; achieving your organization or client's goals, not solving DevOps problems! And, get your orgs name in front tens of thousands of potential hires and clients while doing it!
 blog: true
 
-date: 2020-02-08
+path: 2020-02-08
 updated:
   timestamp: 1581138000000
 

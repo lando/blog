@@ -3,7 +3,7 @@ title: Lando and the Gateway to CI/CD
 byline: Users often call Lando the "first step" to CI/CD. This post from our friends at BlackMesh helps you take the next step.
 blog: true
 
-date: 2021-08-27 12:00:00
+path: 2021-08-27 12:00:00
 updated:
   timestamp: 1630080000000
 

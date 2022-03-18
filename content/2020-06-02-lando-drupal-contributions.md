@@ -3,7 +3,7 @@ title: Lando + Drupal Contributions
 byline: Using lando to facilitate Drupal core and contrib contributions of code, testing, and reviews.
 blog: true
 
-date: 2020-06-30
+path: 2020-06-30
 updated:
   timestamp: 1593489600000
 

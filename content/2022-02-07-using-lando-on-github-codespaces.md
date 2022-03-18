@@ -3,7 +3,7 @@ title: Lando on GitHub Codespaces
 byline: An exploration of GitHub Codespaces and guide to using Lando to provision your Codespace for Drupal development.
 blog: true
 
-date: 2022-02-07 12:00:00
+path: 2022-02-07 12:00:00
 updated:
   timestamp: 1644253200000
 

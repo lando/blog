@@ -3,7 +3,7 @@ title: Using Lando with Gitpod
 byline: A look at Gitpod and how to get started using your Lando setup within Gitpod.
 blog: true
 
-date: 2022-02-10 12:00:00
+path: 2022-02-10 12:00:00
 updated:
   timestamp: 1644512400000
 

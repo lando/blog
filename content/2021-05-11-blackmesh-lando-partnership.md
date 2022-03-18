@@ -3,7 +3,7 @@ title: Lando and the Rider in Black(Mesh)
 byline: I remember the first time I saw BlackMesh. It was DrupalCon North America, 2012. Down the dusty streets of Denver rode a lone figure, dressed in black...
 blog: true
 
-date: 2021-05-11 12:00:00
+path: 2021-05-11 12:00:00
 updated:
   timestamp: 1620748800000
 

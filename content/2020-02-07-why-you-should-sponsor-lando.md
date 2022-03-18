@@ -3,7 +3,7 @@ title: Why you should sponsor Lando
 byline: Sponsoring Lando is more than just supporting a free and open source local development tool, it's supporting a community of developers dedicated to making development easier for us all.
 blog: true
 
-date: 2020-02-09
+path: 2020-02-09
 updated:
   timestamp: 1581224400000
 

@@ -3,7 +3,7 @@ title: Acquia and Lando (or, The Tale of a Tryst)
 byline: Long has the relationship between Acquia and Lando been a love that dare not speak its own name. Today, we're proud to announce that the romance is official - Acquia has sponsored a formal Lando integration.
 blog: true
 
-date: 2021-03-03 12:00:00
+path: 2021-03-03 12:00:00
 updated:
   timestamp: 1614790800000
 

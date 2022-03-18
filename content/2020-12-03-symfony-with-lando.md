@@ -3,7 +3,7 @@ title: Symfony Development with Lando
 byline: Learn how easy it is to develop locally with Symfony and Lando
 blog: true
 
-date: 2020-12-03
+path: 2020-12-03
 updated:
   timestamp: 1606971600000
 

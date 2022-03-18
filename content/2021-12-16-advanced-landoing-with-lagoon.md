@@ -3,7 +3,7 @@ title: Advanced Lando-ing with Lagoon
 byline: We discuss build steps, performance tuning, tooling, and the future of the Lando project with our friends at Amazee.io.
 blog: true
 
-date: 2021-12-16 12:00:00
+path: 2021-12-16 12:00:00
 updated:
   timestamp: 1639674000000
 

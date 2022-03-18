@@ -3,7 +3,7 @@ title: 3 Things to do after you install Lando
 byline: Now that you've got Lando rolling, here are 3 post installation steps to take things to the next level
 blog: true
 
-date: 2020-03-20
+path: 2020-03-20
 updated:
   timestamp: 1584676800000
 

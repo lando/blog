@@ -3,7 +3,7 @@ title: Lando + Hugo [+ ARM]
 byline: Developing a static Hugo site with lando and a team on varying chipsets.
 blog: true
 
-date: 2021-08-27 12:30:00
+path: 2021-08-27 12:30:00
 updated:
   timestamp: 1630081800000
 
