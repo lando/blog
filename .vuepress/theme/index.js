@@ -1,4 +1,5 @@
 const {path} = require('@vuepress/utils');
+const debug = require('debug')('@lando/theme-blog');
 
 module.exports = (options, app) => {
   return {
@@ -37,5 +38,12 @@ module.exports = (options, app) => {
         },
       ],
     ],
+    extendsPageOptions: (pageOptions, app) => {
+      if (pageOptions.filePath && pageOptions.filePath.startsWith(app.dir.source('content'))) {
+        pageOptions.frontmatter = pageOptions.frontmatter || {};
+        pageOptions.frontmatter.permalinkPattern = '/:year/:month/:day/:slug.html';
+        debug('reset permalink pattern to %s for %s', pageOptions.frontmatter.permalinkPattern, pageOptions.filePath);
+      }
+    },
   };
 };
