@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const {path} = require('@vuepress/utils');
 const debug = require('debug')('@lando/theme-blog');
 
@@ -44,6 +45,23 @@ module.exports = (options, app) => {
         pageOptions.frontmatter.permalinkPattern = '/:year/:month/:day/:slug.html';
         debug('reset permalink pattern to %s for %s', pageOptions.frontmatter.permalinkPattern, pageOptions.filePath);
       }
+    },
+    onInitialized(app) {
+      // Add all "content" pages to the site data
+      app.siteData.content = _(app.pages)
+        .filter(page => page.filePath && page.filePath.startsWith(app.dir.source('content')))
+        .value();
+      debug('found content pages: %o', _.map(app.siteData.content, page => page.path));
+
+      // Add all tags to the sitedata
+      app.siteData.tags = _(app.pages)
+        .filter(page => _.has(page, 'data.tags'))
+        .map(page => _.omit(page.data.tags, ['pages']))
+        .flatten()
+        .compact()
+        .uniqBy('key')
+        .value();
+      debug('found tags: %o', app.siteData.tags);
     },
   };
 };
