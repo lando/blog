@@ -3,7 +3,7 @@
     <main class="home">
       <h1>Blog</h1>
       <div class="tagline">
-        We share things about tech, DevOps, workflows and doing the developments because it makes other developers lives easier.
+        We share things about tech, DevOps, workflows and doing the developments because it makes other developers' lives easier.
       </div>
       <div class="home-content">
         <TagPage :pages="filteredContent" />
@@ -67,10 +67,9 @@ const filterContent = tag => {
       display: none;
     }
     .tagline {
-      padding-top: 2em;
+      font-size: 1.8em;
+      letter-spacing: 0px;
       padding-bottom: 2em;
-      font-weight: 700;
-      font-size: 1.5em;
     }
     .home-content {
       display: flex;
