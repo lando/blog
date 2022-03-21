@@ -99,7 +99,7 @@ export default {
   data() {
     return {
       customStyles: {
-        padding: 0,
+        padding: 1,
       },
     };
   },

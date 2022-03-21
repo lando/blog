@@ -16,5 +16,4 @@ import FooterCustom from './../components/FooterCustom.vue';
 .page-wrapper-outer {
   padding-top: 3em;
 }
-
 </style>
