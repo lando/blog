@@ -300,7 +300,7 @@
 
 "@lando/vuepress-theme-default-plus@lando/vuepress-theme-default-plus#main":
   version "1.0.0-beta.29"
-  resolved "https://codeload.github.com/lando/vuepress-theme-default-plus/tar.gz/72c52dc80d3f1c74b83003c139c10e6f9d3b4c8d"
+  resolved "https://codeload.github.com/lando/vuepress-theme-default-plus/tar.gz/8639179d217e8a8d93513a17eb0171fb66f50d9e"
   dependencies:
     "@octokit/core" "^3.5.1"
     "@octokit/plugin-paginate-rest" "^2.17.0"
@@ -2073,6 +2073,11 @@ gray-matter@^4.0.3:
     kind-of "^6.0.2"
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
+
+hamburgers@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/hamburgers/-/hamburgers-1.2.1.tgz#0649907688335dee3d3d248c4c7ac88351527eb0"
+  integrity sha512-uFuVVF7/MeUtRWrA+S1FGGo4iVi7RgPzZAmljBnSeDh4snOZzaQ+oB6CI1m4vKD5RGz9s70ufgiJLxgivqA26Q==
 
 hard-rejection@^2.1.0:
   version "2.1.0"

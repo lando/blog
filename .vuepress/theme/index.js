@@ -7,8 +7,8 @@ module.exports = (options, app) => {
     theme: path.resolve(__dirname, '.'),
     extends: '@lando/vuepress-theme-default-plus',
     alias: {
-      // '@theme/Navbar.vue': path.resolve(__dirname, 'components', 'NavbarCustom.vue'),
-      // '@theme/ToggleSidebarButton.vue': path.resolve(__dirname, 'components', 'ToggleSidebarButtonCustom.vue'),
+      '@theme/Home.vue': path.resolve(__dirname, 'components', 'Home.vue'),
+      '@theme/Navbar.vue': path.resolve(__dirname, 'components', 'NavbarCustom.vue'),
     },
     darkMode: false,
     layouts: path.resolve(__dirname, 'layouts'),
@@ -50,13 +50,23 @@ module.exports = (options, app) => {
       // Add all "content" pages to the site data
       app.siteData.content = _(app.pages)
         .filter(page => page.filePath && page.filePath.startsWith(app.dir.source('content')))
+        .map(page => _.pick(page, ['data', 'key', 'path', 'title', 'lang', 'frontmatter', 'slug']))
+        .map(page => _.merge({}, page, {
+          authors: page.frontmatter.author ? [page.frontmatter.author] : page.frontmatter.authors,
+          contributors: _.get(page, 'data.git.contributors'),
+          date: _.get(page.frontmatter, 'updated.timestamp'),
+          image: page.frontmatter.image,
+          summary: page.frontmatter.description || page.frontmatter.byline || page.frontmatter.summary,
+          tags: page.frontmatter.tags,
+          updated: _.get(page, 'data.git.updatedTime'),
+        }))
         .value();
       debug('found content pages: %o', _.map(app.siteData.content, page => page.path));
 
       // Add all tags to the sitedata
       app.siteData.tags = _(app.pages)
         .filter(page => _.has(page, 'data.tags'))
-        .map(page => _.omit(page.data.tags, ['pages']))
+        .map(page => page.data.tags)
         .flatten()
         .compact()
         .uniqBy('key')
