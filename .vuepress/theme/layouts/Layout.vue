@@ -1,14 +1,14 @@
 <template>
   <ParentLayout>
     <template #footer>
-      <Footer />
+      <FooterCustom />
     </template>
   </ParentLayout>
 </template>
 
 <script setup>
 import ParentLayout from '@lando/vuepress-theme-default-plus/layouts/Layout.vue';
-import Footer from './../components/Footer.vue';
+import FooterCustom from './../components/FooterCustom.vue';
 </script>
 
 <style lang="scss">
