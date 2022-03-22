@@ -300,7 +300,7 @@
 
 "@lando/vuepress-theme-default-plus@lando/vuepress-theme-default-plus#main":
   version "1.0.0-beta.29"
-  resolved "https://codeload.github.com/lando/vuepress-theme-default-plus/tar.gz/200654832de7338f12cd73cd4111d75144546540"
+  resolved "https://codeload.github.com/lando/vuepress-theme-default-plus/tar.gz/67f754d424a1a431f481b6d27647a6303659d835"
   dependencies:
     "@octokit/core" "^3.5.1"
     "@octokit/plugin-paginate-rest" "^2.17.0"
