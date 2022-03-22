@@ -13,18 +13,6 @@ module.exports = (options, app) => {
     darkMode: false,
     layouts: path.resolve(__dirname, 'layouts'),
     plugins: [
-      ['@vuepress/container',
-        {
-          type: 'caption',
-          defaultTitle: '',
-        },
-      ],
-      ['@vuepress/container',
-        {
-          type: 'thumbnail',
-          defaultTitle: '',
-        },
-      ],
       ['@vuepress/plugin-palette',
         {
           preset: 'sass',
