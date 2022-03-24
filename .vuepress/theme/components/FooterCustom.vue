@@ -3,7 +3,7 @@
     <div class="footer-wrapper">
       <div class="footer-top">
         <div class="footer-image">
-          <img src="/lando/logo.png" alt="lando logo">
+          <img src="/lando/logo-white.png" alt="lando logo">
         </div>
         <div class="footer-newsletter">
           <MailChimp
@@ -106,12 +106,16 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../styles/main.scss';
 #footer {
   font-size: 0.875em;
   margin-top: 2rem;
   overflow-y: hidden;
+  background-color: $background-dark;
+  color: $text-dark;
+  font-size: 0.875em;
+  margin-top: 2rem;
   .footer-wrapper {
     transition: transform var(--t-transform), background-color var(--t-color), border-color var(--t-color);
     width: var(--total-width);
@@ -128,19 +132,66 @@ export default {
       }
     }
     .footer-newsletter {
-      .subscribe-input {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 10px 80px 10px 20px;
-        height: 50px;
-        border: 0;
-        font-size: 16px;
-        background-color: hsl(var(--c-bg), 95%);
-        &:focus {
-          outline: none;
-          border-color: hsl(var(--c-brand), 18%);
+      .post-subscribe {
+        .newsletter__wrap {
+          background-color: $background-dark;
+          h3 {
+            font-weight:400;
+            font-size: .875rem;
+            line-height: 150%;
+            color: $text-dark;
+            margin: 0 0 1rem 0;
+            text-align: left;
+          }
+          .newsletter__content {
+            display: none;
+          }
+          .subscribe-form {
+            display: flex;
+            .subscribe-input {
+              width: 100%;
+              box-sizing: border-box;
+              padding: 10px 80px 10px 20px;
+              margin: 0;
+              height: 50px;
+              border: none;
+              border-radius: 0px;
+              font-size: 16px;
+              color: white;
+              background-color: rgba(238, 237, 239, 0.1);
+              &:focus {
+                outline: none;
+                border-color: hsl(var(--c-brand), 18%);
+              }
+              &.disabled {
+                opacity: .5;
+              }
+            }
+            input.button {
+              opacity: 1;
+              display: inline-block;
+              border-radius: 0px 6px 6px 0px;
+              height: 50px;
+              border: none;
+              :after {
+                content: url('../../public/images/button-arrow.svg');
+                color: white;
+              }
+            }
+            .subscribe-error,
+            .subscribe-success {
+              padding: 1em;
+              color: red;
+              text-transform: uppercase;
+              font-weight: 800;
+              font-size: 0.75rem;
+            }
+            .subscribe-success {
+              color: var(--c-brand);
+            }
+          }
         }
-      }
+      } 
     }
   }
 

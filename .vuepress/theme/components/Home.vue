@@ -1,6 +1,7 @@
 <template>
   <div class="home-wrapper">
     <main class="home">
+      <img src="/images/Planet.svg" />
       <h1>Blog</h1>
       <div class="tagline">
         We share things about tech, DevOps, workflows and doing the developments because it makes other developers' lives easier.
@@ -11,11 +12,11 @@
           <div class="home-rightbar">
             <h3>Topics</h3>
             <div
-              v-if="tags.length > 0"
+              v-if="frontpageTags.length > 0"
               class="topic-list"
             >
               <a
-                v-for="tag in tags"
+                v-for="tag in frontpageTags"
                 :key="tag.key"
                 class="topic-link"
                 :class="{active: tag.name === filter}"
@@ -41,7 +42,7 @@ import {useSiteData} from '@vuepress/client';
 import TagPage from '@lando/vuepress-theme-default-plus/plugins/plugin-simple-tags/TagPage.vue';
 
 const siteData = useSiteData();
-const {content, tags} = siteData.value;
+const {content, frontpageTags} = siteData.value;
 
 const filter = ref(null);
 const filteredContent = computed(() => {
@@ -63,6 +64,9 @@ const filterContent = tag => {
   .blog-home {
     .home {
     width: var(--homepage-width);
+    h1 {
+      margin-top: 1.125rem;
+    }
     #main-title {
       display: none;
     }
@@ -91,15 +95,24 @@ const filterContent = tag => {
         h3 {
           padding-top: 0;
           margin-top: 0;
+          font-size: 1.5rem;
         }
         .search-box {
           margin-left: 0;
           width: 100%;
+          input {
+            border-radius: 42px;
+            border: 2px solid #BDB6C2;
+            width: 13rem;
+          }
         }
         .topic-link {
           cursor: pointer;
           color: var(--c-text-lightest);
           display: block;
+          font-size: 1.25rem;
+          margin-bottom: .625rem;
+          text-transform: capitalize;
           &.active {
             text-decoration: underline;
             color: var(--c-brand-light);

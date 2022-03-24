@@ -84,26 +84,49 @@ h4 {
   line-height: 1.5rem;
 }
 
-p a {
-	color: $landoGrey;
-	font-weight: bold;
-	text-decoration: none;
-	position: relative;
-	&:hover {
-		color: $landoGrey;
-		&:after {
-			height: 100%;
-		}
-	}
-	&::after {
-		content: "";
-		background: $solarYellow;
-		position: absolute;
-		width: calc(100% + 4px);
-		left: -2px;
-		bottom: 0px;
-		height: 40%;
-		z-index: -1;
-		transition: 0.3s;
-	}
+p {
+  color: $landoGrey;
+  a {
+    color: $landoGrey;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    &:hover {
+      color: $landoGrey;
+      &:after {
+        height: 100%;
+      }
+    }
+    &::after {
+      content: "";
+      background: $solarYellow;
+      position: absolute;
+      width: calc(100% + 4px);
+      left: -2px;
+      bottom: 0px;
+      height: 40%;
+      z-index: -1;
+      transition: 0.3s;
+    }
+  }
+}
+
+.btn {
+  padding: .5rem 2rem;
+  border-radius: 42px;
+  background: var(--c-brand);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 2rem;
+  height: 2rem;
+  margin: 0rem;
+  border: none;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+}
+.btn-primary {
+  font-weight: bold;
+  text-transform: uppercase;
 }

@@ -9,6 +9,7 @@ module.exports = (options, app) => {
     alias: {
       '@theme/Home.vue': path.resolve(__dirname, 'components', 'Home.vue'),
       '@theme/Navbar.vue': path.resolve(__dirname, 'components', 'NavbarCustom.vue'),
+      '@theme/TagPageCard.vue': path.resolve(__dirname, 'components', 'TagPageCardCustom.vue'),
     },
     darkMode: false,
     layouts: path.resolve(__dirname, 'layouts'),
@@ -71,7 +72,21 @@ module.exports = (options, app) => {
         .compact()
         .uniqBy('key')
         .value();
+      
       debug('found tags: %o', app.siteData.tags);
+
+      app.siteData.frontpageTags = _(app.siteData.tags)
+        .filter(tag => _.includes(displayedFrontpageTags, tag.name)); 
+      
+      debug('found front page tags: %o', app.siteData.frontpageTags);
+
+      const displayedFrontpageTags = [   
+        'case study',
+        'devops',
+        'development',
+        'lando',
+        'workflows'
+      ];
     },
   };
 };

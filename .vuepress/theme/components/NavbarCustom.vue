@@ -110,6 +110,7 @@ const getCssValue = (el, property) => {
   max-width: var(--total-width);
   margin: auto;
   z-index: 200;
+  font-size: 1.375rem;
   .logo {
     margin-right: 3.8125rem;
   }
