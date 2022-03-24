@@ -109,12 +109,11 @@ export default {
 <style lang="scss">
 @import '../styles/main.scss';
 #footer {
-  font-size: 0.875em;
+  font-size: 1rem;
   margin-top: 2rem;
   overflow-y: hidden;
   background-color: $background-dark;
   color: $text-dark;
-  font-size: 0.875em;
   margin-top: 2rem;
   .footer-wrapper {
     transition: transform var(--t-transform), background-color var(--t-color), border-color var(--t-color);
@@ -239,6 +238,9 @@ export default {
       border-top: 1px solid rgba(232, 231, 233, 0.1);
       display: flex;
       gap: 2rem;
+      h4 {
+        color: $text-dark;
+      }
     }
   }
 }
