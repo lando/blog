@@ -253,7 +253,7 @@ export default {
 }
 .footer-bottom-wrapper {
   background-color: var(--c-brand);
-  color: var(--c-text);
+  color: $text-dark;
   font-size: .875rem;
   padding: 1rem 6.25rem;
   .footer-bottom {
@@ -270,7 +270,7 @@ export default {
       list-style: none;
       gap: 2rem;
       li a {
-        color: var(--c-text);
+        color: $text-dark;
       }
     }
     .footer-social {
@@ -279,6 +279,7 @@ export default {
       margin-left: auto;
       a {
         svg {
+          fill: $text-dark;
           height: 1.5625rem;
         }
       }
