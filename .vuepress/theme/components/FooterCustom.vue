@@ -1,5 +1,11 @@
 <template>
   <div id="footer">
+    <FooterCta
+      heading="Like the Lando sound?"
+      text="If you're digging the righteous grooves of Lando, maybe it's time to pick up the axe and start jamming. Download Lando and experience the full glory of development without borders."
+      ctaText="Get Lando"
+      ctaLink="/download"
+    />
     <div class="footer-wrapper">
       <div class="footer-top">
         <div class="footer-image">
@@ -95,6 +101,7 @@
 </template>
 
 <script>
+import FooterCta from './FooterCta.vue';
 export default {
   data() {
     return {
