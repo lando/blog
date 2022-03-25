@@ -122,6 +122,7 @@ const lastUpdated = computed(() => {
     .pic {
       margin-right: 8px;
       img {
+        display: block;
         border-radius: 50% !important;
         width: 24px;
         max-width: initial;
