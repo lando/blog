@@ -81,7 +81,7 @@ const lastUpdated = computed(() => {
   if (!hasLastUpdated.value) return null;
   const updatedDate = new Date(props.updated.timestamp);
   const abbrevDays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat'];
-  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   return `${abbrevDays[updatedDate.getDay()]}, ${months[updatedDate.getMonth()]} ${updatedDate.getDate()}, ${updatedDate.getFullYear()}`;
 });
 
@@ -127,6 +127,18 @@ const lastUpdated = computed(() => {
         width: 24px;
         max-width: initial;
       }
+    }
+  }
+}
+
+@media (max-width: $MQMobile) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .blog-header {
+    .byline {
+      line-height: 1.2;
     }
   }
 }

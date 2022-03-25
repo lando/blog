@@ -123,9 +123,9 @@ export default {
   color: $text-dark;
   margin-top: 2rem;
   .footer-wrapper {
-    transition: transform var(--t-transform), background-color var(--t-color), border-color var(--t-color);
-    width: var(--total-width);
-    margin: auto;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
   }
   .footer-top {
     display: flex;
@@ -303,6 +303,11 @@ export default {
     padding: 0rem;
     .footer-column {
       width: auto;
+    }
+    .footer-newsletter {
+      .newsletter__wrap {
+        padding: 0rem;
+      }
     }
   }
 }
