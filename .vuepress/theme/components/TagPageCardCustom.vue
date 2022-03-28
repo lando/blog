@@ -172,6 +172,7 @@ const authors = computed(() => {
       &:after {
         content: url("/images/chevron-right.svg");
         position: relative;
+        top: 1px;
         display: inline-flex;
         justify-content: center;
         background: none;
