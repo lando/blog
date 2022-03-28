@@ -100,16 +100,11 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import FooterCta from './FooterCta.vue';
-export default {
-  data() {
-    return {
-      customStyles: {
-        padding: 1,
-      },
-    };
-  },
+
+const customStyles = {
+  padding: 1,
 };
 </script>
 
@@ -197,7 +192,7 @@ export default {
             }
           }
         }
-      } 
+      }
     }
   }
 

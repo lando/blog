@@ -62,20 +62,19 @@ module.exports = (options, app) => {
         .compact()
         .uniqBy('key')
         .value();
-      
       debug('found tags: %o', app.siteData.tags);
 
       app.siteData.frontpageTags = _(app.siteData.tags)
-        .filter(tag => _.includes(displayedFrontpageTags, tag.name)); 
-      
+        .filter(tag => _.includes(displayedFrontpageTags, tag.name));
+
       debug('found front page tags: %o', app.siteData.frontpageTags);
 
-      const displayedFrontpageTags = [   
+      const displayedFrontpageTags = [
         'case study',
         'devops',
         'development',
         'lando',
-        'workflows'
+        'workflows',
       ];
     },
   };

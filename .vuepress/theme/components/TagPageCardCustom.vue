@@ -107,10 +107,10 @@ const authors = computed(() => {
 @import '../styles/main.scss';
 .tag-page-summary-card-outer {
   box-shadow: 0px 14px 40px rgba(73,66,78,0.14);
-	border-radius: 6px;
-	padding: 2.5rem;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+  border-radius: 6px;
+  padding: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   a {
     color: var(--c-text-light);
   }
