@@ -29,11 +29,6 @@
        url('../../public/fonts/lexend-800.woff') format('woff');
 }
 
-body {
-  font-family: Lexend;
-  color: $landoGrey;
-}
-
 .custom-container {
   &.thumbnail {
     border: 1px dashed var(--c-border-dark);
@@ -57,76 +52,129 @@ body {
   }
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: $landoGrey;
+body {
   font-family: Lexend;
-  font-size: 4em;
-  border: 0;
-  letter-spacing: -0.03em;
-  line-height: 4.25rem;
-  font-weight: 800;
-}
-h2 {
-  font-size: 2em;
-  line-height: 3.125rem;
-  margin-top: 2.8125rem;
-}
-h3 {
-  font-size: 1.4em;
-  line-height: 1.6875rem;
-  margin-top: 2.25rem;
-}
-h4 {
-  font-size: 1.2em;
-  line-height: 1.5rem;
-}
-
-p {
   color: $landoGrey;
-  a {
+
+  h1,
+  h2,
+  h3,
+  h4 {
     color: $landoGrey;
-    font-weight: bold;
-    text-decoration: none;
-    position: relative;
-    &:hover {
+    font-family: Lexend;
+    font-size: 4em;
+    border: 0;
+    letter-spacing: -0.03em;
+    line-height: 4.25rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 2em;
+    line-height: 3.125rem;
+    margin-top: 2.8125rem;
+  }
+  h3 {
+    font-size: 1.4em;
+    line-height: 1.6875rem;
+    margin-top: 2.25rem;
+  }
+  h4 {
+    font-size: 1.2em;
+    line-height: 1.5rem;
+  }
+
+  p {
+    color: $landoGrey;
+    a {
       color: $landoGrey;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+      &:hover {
+        color: $landoGrey;
+        &:after {
+          height: 100%;
+        }
+      }
       &:after {
-        height: 100%;
+        content: "";
+        background: $solarYellow;
+        position: absolute;
+        width: calc(100% + 4px);
+        left: -2px;
+        bottom: 0px;
+        height: 40%;
+        z-index: -1;
+        transition: 0.3s;
       }
     }
-    &::after {
-      content: "";
-      background: $solarYellow;
-      position: absolute;
-      width: calc(100% + 4px);
-      left: -2px;
-      bottom: 0px;
-      height: 40%;
-      z-index: -1;
-      transition: 0.3s;
-    }
   }
-}
 
-.btn {
-  padding: .5rem 2rem;
-  border-radius: 42px;
-  background: var(--c-brand);
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  display: inline-block;
-  line-height: 2rem;
-  height: 2rem;
-  margin: 0rem;
-  border: none;
-  font-family: var(--font-family);
-  text-transform: uppercase;
-}
-.btn-primary {
-  font-weight: bold;
-  text-transform: uppercase;
+  .btn {
+    padding: .5rem 2rem;
+    border-radius: 42px;
+    background: var(--c-brand);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 2rem;
+    height: 2rem;
+    margin: 0rem;
+    border: none;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+  }
+  .btn-primary {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .page-wrapper-inner{
+    z-index: 3;
+  }
+
+  #app {
+    .blog-header-outer .blog-header{
+      border: none;
+    }
+    .page-type-blog {
+      .tag-list {
+        border-top: none;
+        .header {
+          font-weight: 700;
+          font-size: 1.5rem;
+          color: $landoGrey;
+        }
+        .tag-link {
+          text-transform: capitalize;
+          border: 1px solid $quotedText;
+          border-radius: 4px;
+          color: $quotedText;
+          font-size: .875rem;
+          padding: 5px 8px;
+        }
+      }
+      .page.blog {
+        .theme-default-content {
+          line-height: 160%;
+          p {
+            font-size: 1.25rem;
+          }
+          ul {
+            font-size: 1.25rem;
+          }
+          blockquote {
+            font-size: 1.125rem;
+            border-left: 3px solid $electricPink;
+            p {
+              font-size: 1.125rem;
+              color: $quotedText;
+            }
+          }
+        }
+      }
+    }
+
+  }
 }

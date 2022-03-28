@@ -8,6 +8,8 @@
   --total-width: calc(var(--content-width) + var(--rightbar-width) + var(--rightbar-margin));
   --homepage-width: 1000px;
   --search-border-color: #BDB6C2;
+  --c-text-quote: $quotedText;
+  --c-text-lighter: $landoGrey;
 }
 
 html.dark {

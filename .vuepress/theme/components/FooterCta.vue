@@ -13,13 +13,23 @@
     padding: 5.875rem;
     text-align: center;
     font-size: 1.25rem;
+    color: $text-dark;
+    h3 {
+      font-size: 3rem;
+      color: $text-dark;
+    }
+    p {
+      color: $text-dark;
+      margin: 0 auto 2rem auto;
+      max-width: var(--content-width);
+    }
     a.btn {
       color: var(--c-brand);
       font-weight: bold;
       text-transform: uppercase;
-      background-color: var(--c-text-lightest);
+      background-color: $text-dark;
       &:after {
-        content: url('../../public/images/button-arrow.svg');
+        content: url("/images/chevron-right.svg");
         margin-left: 1rem;
       }
     }

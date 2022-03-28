@@ -1,5 +1,11 @@
 <template>
   <div id="footer">
+    <FooterCta
+      heading="Like the Lando sound?"
+      text="If you're digging the righteous grooves of Lando, maybe it's time to pick up the axe and start jamming. Download Lando and experience the full glory of development without borders."
+      ctaText="Get Lando"
+      ctaLink="/download"
+    />
     <div class="footer-wrapper">
       <div class="footer-top">
         <div class="footer-image">
@@ -95,6 +101,7 @@
 </template>
 
 <script>
+import FooterCta from './FooterCta.vue';
 export default {
   data() {
     return {
@@ -116,9 +123,9 @@ export default {
   color: $text-dark;
   margin-top: 2rem;
   .footer-wrapper {
-    transition: transform var(--t-transform), background-color var(--t-color), border-color var(--t-color);
-    width: var(--total-width);
-    margin: auto;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
   }
   .footer-top {
     display: flex;
@@ -246,7 +253,7 @@ export default {
 }
 .footer-bottom-wrapper {
   background-color: var(--c-brand);
-  color: var(--c-text);
+  color: $text-dark;
   font-size: .875rem;
   padding: 1rem 6.25rem;
   .footer-bottom {
@@ -263,7 +270,7 @@ export default {
       list-style: none;
       gap: 2rem;
       li a {
-        color: var(--c-text);
+        color: $text-dark;
       }
     }
     .footer-social {
@@ -272,6 +279,7 @@ export default {
       margin-left: auto;
       a {
         svg {
+          fill: $text-dark;
           height: 1.5625rem;
         }
       }
@@ -296,6 +304,11 @@ export default {
     padding: 0rem;
     .footer-column {
       width: auto;
+    }
+    .footer-newsletter {
+      .newsletter__wrap {
+        padding: 0rem;
+      }
     }
   }
 }

@@ -7,9 +7,11 @@ module.exports = (options, app) => {
     theme: path.resolve(__dirname, '.'),
     extends: '@lando/vuepress-theme-default-plus',
     alias: {
+      '@theme/BlogHeader.vue': path.resolve(__dirname, 'components', 'BlogHeaderCustom.vue'),
       '@theme/Home.vue': path.resolve(__dirname, 'components', 'Home.vue'),
       '@theme/Navbar.vue': path.resolve(__dirname, 'components', 'NavbarCustom.vue'),
       '@theme/TagPageCard.vue': path.resolve(__dirname, 'components', 'TagPageCardCustom.vue'),
+      '@theme/TOC.vue': path.resolve(__dirname, 'components', 'TOCCustom.vue'),
     },
     darkMode: false,
     layouts: path.resolve(__dirname, 'layouts'),
