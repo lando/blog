@@ -1,0 +1,199 @@
+@import '@lando/vuepress-theme-default-plus/styles/main';
+
+// Font loading
+@font-face {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lexend'),
+       url('../../public/fonts/lexend-regular.woff2') format('woff2'),
+       url('../../public/fonts/lexend-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lexend'),
+       url('../../public/fonts/lexend-700.woff2') format('woff2'),
+       url('../../public/fonts/lexend-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Lexend'),
+       url('../../public/fonts/lexend-800.woff2') format('woff2'),
+       url('../../public/fonts/lexend-800.woff') format('woff');
+}
+
+.custom-container {
+  &.thumbnail {
+    border: 1px dashed var(--c-border-dark);
+    border-radius: 3px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    padding: 1.5em;
+    p {
+      margin: 0;
+    }
+  }
+  &.caption {
+    padding: 5px;
+    background-color: var(--c-bg-lighter);
+    color: var(--c-text-light);
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+  }
+}
+
+body {
+  font-family: Lexend;
+  color: $landoGrey;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $landoGrey;
+    font-family: Lexend;
+    font-size: 4em;
+    border: 0;
+    letter-spacing: -0.03em;
+    line-height: 4.25rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 2em;
+    line-height: 3.125rem;
+    margin-top: 2.8125rem;
+  }
+  h3 {
+    font-size: 1.4em;
+    line-height: 1.6875rem;
+    margin-top: 2.25rem;
+  }
+  h4 {
+    font-size: 1.2em;
+    line-height: 1.5rem;
+  }
+
+  p {
+    color: $landoGrey;
+    a {
+      color: $landoGrey;
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+      &:hover {
+        color: $landoGrey;
+        &:after {
+          height: 100%;
+        }
+      }
+      &:after {
+        content: "";
+        background: $solarYellow;
+        position: absolute;
+        width: calc(100% + 4px);
+        left: -2px;
+        bottom: 0px;
+        height: 40%;
+        z-index: -1;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .btn {
+    padding: .5rem 2rem;
+    border-radius: 42px;
+    background: var(--c-brand);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 2rem;
+    height: 2rem;
+    margin: 0rem;
+    border: none;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+  }
+  .btn-primary {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .page-wrapper-inner{
+    z-index: 3;
+  }
+
+  #app {
+    .blog-header-outer .blog-header{
+      border: none;
+    }
+    .page-type-blog {
+      .tag-list {
+        border-top: none;
+        .header {
+          font-weight: 700;
+          font-size: 1.5rem;
+          color: $landoGrey;
+        }
+        .tag-link {
+          text-transform: capitalize;
+          border: 1px solid $quotedText;
+          border-radius: 4px;
+          color: $quotedText;
+          font-size: .875rem;
+          padding: 5px 8px;
+        }
+      }
+      .page.blog {
+        .theme-default-content {
+          line-height: 160%;
+          p {
+            font-size: 1.25rem;
+          }
+          ul {
+            font-size: 1.25rem;
+          }
+          blockquote {
+            font-size: 1.125rem;
+            border-left: 3px solid $electricPink;
+            p {
+              font-size: 1.125rem;
+              color: $quotedText;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: $MQNarrow) {
+  body {
+    p {
+      a {
+        color: var(--c-brand);
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        &:hover {
+          color: var(--c-brand);
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
-# Lando's Blog Subsite
+# Lando Blog
 
-[lando.dev/blog](https://lando.dev/blog) [VuePress](https://vuepress.vuejs.org/) Blog Subsite repo.
+This repo contains the [blog subsite](https://lando.dev/blog) for [Lando](https://lando.dev).
 
 ## Issues, Questions and Support
 
@@ -12,37 +12,46 @@ If you'd like to report a bug or submit a feature request then please [use the i
 
 We try to log all changes big and small in both [THE CHANGELOG](https://github.com/lando/blog/blob/main/CHANGELOG.md) and the [release notes](https://github.com/lando/blog/releases).
 
-
 ## Development
 
-* Requires [Lando](https://lando.dev/)
+* Requires [Node 14+](https://nodejs.org/dist/latest-v14.x/)
 * Prefers [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+* Alternatively you can also use Lando
 
 ```bash
 git clone https://github.com/lando/blog.git && cd blog
-yarn install
 ```
 
-If you dont' want to install Node 14 or Yarn for whatever reason you can install [Lando](https://docs.lando.dev/basics/installation.html) and use that:
+### Using Node/Yarn
 
 ```bash
-git clone https://github.com/lando/blog.git && cd blog
-# Install deps and get node
-lando start
+# Install deps
+yarn | npm install
 
-# Run commands
-lando node
-lando yarn
-```
+# Launch dev site
+yarn dev
 
-## Testing
-
-```bash
-# Lint the code
+# Lint
 yarn lint
 
-# Run unit tests
-yarn test
+# Build site
+yarn build
+```
+
+### Using Lando
+
+```bash
+# Install deps
+lando start
+
+# Launch dev site
+lando dev
+
+# Lint
+lando yarn lint
+
+# Build site
+lando yarn build
 ```
 
 ## Releasing
@@ -62,3 +71,4 @@ Made with [contributors-img](https://contrib.rocks).
 ## Other Resources
 
 * [Important advice](https://www.youtube.com/watch?v=WA4iX5D9Z64)
+* Other stuff
