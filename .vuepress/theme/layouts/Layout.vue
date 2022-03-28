@@ -25,6 +25,22 @@ import FooterCta from './../components/FooterCta.vue';
   padding-top: 3em;
 }
 
+.theme-container {
+  .theme-default-content {
+    position: relative;
+  }
+  .sidebar-open .sidebar {
+    transform: translateY(0);
+    top: var(--navbar-height);
+  }
+  .sidebar {
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+  }
+}
+
 @media (max-width: 719px) {
   .theme-container.sidebar-open {
     overflow: hidden;
@@ -32,8 +48,6 @@ import FooterCta from './../components/FooterCta.vue';
     .sidebar {
       transform: none;
       display: block;
-      height: 100%;
-      width: 100%;
       position: fixed;
       transition: .5s;
       padding-top: calc(var(--navbar-height) + 2.5rem);
