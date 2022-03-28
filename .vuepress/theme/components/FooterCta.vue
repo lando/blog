@@ -61,6 +61,9 @@
       a {
         font-size: 1rem;
       }
+      p {
+        margin: 2rem;
+      }
     }
   }
 </style>
