@@ -1,5 +1,12 @@
 <template>
   <ParentLayout>
+    <template #sidebar-bottom>
+      <FooterCta
+        heading="What are you waiting for?"
+        ctaText="Get Lando Now"
+        ctaLink="/download"
+      />
+    </template>
     <template #footer>
       <FooterCustom />
     </template>
@@ -15,5 +22,56 @@ import FooterCustom from './../components/FooterCustom.vue';
 @import '../styles/main.scss';
 .page-wrapper-outer {
   padding-top: 3em;
+}
+
+@media (max-width: 719px) {
+  .theme-container.sidebar-open {
+    overflow: hidden;
+
+    .sidebar {
+      transform: none;
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      transition: .5s;
+      padding-top: calc(var(--navbar-height) + 2.5rem);
+      .navbar-items {
+        border: none;
+        .navbar-item {
+          border-bottom: 1px solid #BDB6C2;
+          padding: 1.3125rem 0rem;
+          margin: 0 1.5rem;
+          a {
+            font-weight: normal;
+            font-size: 1.125rem;
+            width: 100%;
+          }
+        }
+        .navbar-dropdown-wrapper {
+          &:after {
+            content: url('../../public/images/down-arrow.svg');
+            position: absolute;
+            right: 1.125rem;
+            top: 1.5rem;
+
+          }
+          .title {
+            font-weight: normal;
+            font-size: 1.125rem;
+          }
+          .navbar-dropdown-title-mobile {
+            width: 100%;
+            text-align: left;
+          }
+          button {
+            .arrow {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 </style>
