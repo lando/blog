@@ -42,8 +42,8 @@ Using this repo gives you a `.lando.yml` file configured for Drupal contribution
 
 ## How?
 
-Prefer video:
-<YouTube url="https://www.youtube.com/embed/vVpKCQZKNtM?feature=youtu.be&start=589" />
+Prefer video?
+<YouTube id="vVpKCQZKNtM" />
 
 Let's step through how to spin up your contribution workflow. First clone down this repo:
 
