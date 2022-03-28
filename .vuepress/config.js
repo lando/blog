@@ -60,6 +60,7 @@ module.exports = {
     sitemap: true,
     sharedNavbar: [
       {text: 'Blog', link: '/'},
+      {text: 'Events', link: 'https://lando.dev/events'},
       {text: 'Support', link: 'https://lando.dev/support/'},
       {text: 'Docs', link: 'https://docs.lando.dev'},
     ],

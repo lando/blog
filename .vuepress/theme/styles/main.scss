@@ -178,3 +178,22 @@ body {
 
   }
 }
+
+@media (max-width: $MQNarrow) {
+  body {
+    p {
+      a {
+        color: var(--c-brand);
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        &:hover {
+          color: var(--c-brand);
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
