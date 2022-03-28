@@ -181,4 +181,21 @@ const authors = computed(() => {
     }
   }
 }
+
+@media (max-width: $MQMobile) {
+  .tag-page-summary-card-outer {
+    padding: 1.5rem 2rem;
+    h2 {
+      margin-top: 1rem;
+    }
+    .tag-page-summary-card {
+      .tag-page-summary {
+        padding-top: 1.8125rem;
+      }
+      .tag-page-attribution {
+        font-size: 1rem;
+      }
+    }
+  }
+}
 </style>
