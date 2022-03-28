@@ -16,6 +16,7 @@
 <script setup>
 import ParentLayout from '@lando/vuepress-theme-default-plus/layouts/Layout.vue';
 import FooterCustom from './../components/FooterCustom.vue';
+import FooterCta from './../components/FooterCta.vue';
 </script>
 
 <style lang="scss">
