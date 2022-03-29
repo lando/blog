@@ -9,7 +9,7 @@
     <div class="footer-wrapper">
       <div class="footer-top">
         <div class="footer-image">
-          <img src="/lando/logo-white.png" alt="lando logo">
+          <img src="/images/logo-white.png" alt="lando logo">
         </div>
         <div class="footer-newsletter">
           <MailChimp
