@@ -2,7 +2,7 @@ const {path} = require('@vuepress/utils');
 
 module.exports = {
   base: '/blog/',
-  title: 'Landob.log',
+  title: 'Lando',
   description: 'A liberating blog by and for professional developers. We share things about tech, DevOps and development using but not limited to Lando.',
   theme: path.resolve(__dirname, './theme'),
   themeConfig: {
@@ -15,7 +15,7 @@ module.exports = {
     editLinkText: 'Suggest an edit to this page',
     lastUpdated: true,
     lastUpdatedText: 'Updated',
-    logo: '/lando/logo.png',
+    logo: '/images/logo.png',
     logoDark: '/images/logo-white.png',
     repo: 'lando/blog',
     sidebar: [],
