@@ -712,7 +712,7 @@
     ts-debounce "^4.0.0"
     vue "^3.2.28"
 
-"@vuepress/plugin-container@2.0.0-beta.36", "@vuepress/plugin-container@^2.0.0-beta.35", "@vuepress/plugin-container@^2.0.0-beta.36":
+"@vuepress/plugin-container@2.0.0-beta.36", "@vuepress/plugin-container@^2.0.0-beta.35":
   version "2.0.0-beta.36"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-container/-/plugin-container-2.0.0-beta.36.tgz#b5a553a8999500eb92f628329a69e5777ea90f53"
   integrity sha512-65DjPd2RHnbk8wvyPimalC7K+dHbb41fWH8bPdJL6EhFPBCdplXmDHjR8sLU/15HGrF8ms8PRJ0nKRv5WUEsrw==
@@ -810,7 +810,7 @@
     "@vuepress/core" "2.0.0-beta.36"
     prismjs "^1.26.0"
 
-"@vuepress/plugin-register-components@^2.0.0-beta.35":
+"@vuepress/plugin-register-components@^2.0.0-beta.35", "@vuepress/plugin-register-components@^2.0.0-beta.36":
   version "2.0.0-beta.36"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-register-components/-/plugin-register-components-2.0.0-beta.36.tgz#b6b5bb5134e6d571d2384ae9af69b4285f99ff21"
   integrity sha512-ciIDC8t4r9n1wbVVwvfcOY/iZ2s8tka3XThs1zrfja2l7TI9BX6+wCT9N/TO+1pOjYhn6938FmTrv4kK69eRFA==
