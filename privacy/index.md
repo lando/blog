@@ -1,27 +1,29 @@
 ---
-metaTitle: Privacy Policy | Lando Documentation
-description: Lando Documentation's Privacy Policy
+title: Privacy Policy
+description: The privacy policies for Lando web properties and Lando as software
+contributors: false
+editLink: false
 ---
 
 # Privacy Policy
 
-**Effective date:** _November 26, 2019_
+**Last updated:** _March 7, 2022_
 
-Kalabox Inc DBA Tandem ("us", "we", or "our") operates the <https://blog.lando.dev> website (hereinafter referred to as the "Service").
+Lando System, Inc ("us", "we", or "our") operates the <https://lando.dev> website (hereinafter referred to as the "Service").
 
 This page informs you of our policies regarding the collection, use and disclosure of personal data when you use our Service and the choices you have associated with that data.
 
-We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from <https://blog.lando.dev>
+We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from <https://lando.dev>
 
 ## Other Policies
 
-If you are looking for the Privacy Policy for Lando the software you should [look here](https://github.com/lando/lando/blob/master/PRIVACY.md). For more a human-readable explanation of that Privacy Policy you should check out [our documentation](/help/data.html)
+If you are looking for the Privacy Policy for the Lando software itself you should [look here](https://github.com/lando/lando/blob/master/PRIVACY.md). For more a human-readable explanation of that Privacy Policy you should check out [our documentation](https://docs.lando.dev/help/data.html)
 
 ## Definitions
 
 *   **Service**
 
-    Service is the <https://blog.lando.dev> website operated by Kalabox Inc DBA Tandem
+    Service is the <https://lando.dev> website operated by Lando System, Inc
 
 *   **Personal Data**
 
@@ -63,6 +65,8 @@ While using our Service, we may ask you to provide us with certain personally id
 
 *   Email address
 *   First name and last name
+*   Phone number
+*   Address, State, Province, ZIP/Postal code, City
 *   Cookies and Usage Data
 
 We may use your Personal Data to contact you with newsletters, marketing or promotional materials and other information that may be of interest to you. You may opt out of receiving any, or all, of these communications from us by following the unsubscribe link or instructions provided in any email we send or by contacting us.
@@ -70,6 +74,12 @@ We may use your Personal Data to contact you with newsletters, marketing or prom
 #### Usage Data
 
 We may also collect information on how the Service is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+
+#### Location Data
+
+We may use and store information about your location if you give us permission to do so ("Location Data"). We use this data to provide features of our Service, to improve and customise our Service.
+
+You can enable or disable location services when you use our Service at any time by way of your device settings.
 
 #### Tracking & Cookies Data
 
@@ -88,7 +98,7 @@ Examples of Cookies we use:
 
 ## Use of Data
 
-Kalabox Inc DBA Tandem uses the collected data for various purposes:
+Lando System, Inc uses the collected data for various purposes:
 
 *   To provide and maintain our Service
 *   To notify you about changes to our Service
@@ -101,9 +111,9 @@ Kalabox Inc DBA Tandem uses the collected data for various purposes:
 
 ## Legal Basis for Processing Personal Data under the General Data Protection Regulation (GDPR)
 
-If you are from the European Economic Area (EEA), Kalabox Inc DBA Tandem legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Data we collect and the specific context in which we collect it.
+If you are from the European Economic Area (EEA), Lando System, Inc legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Data we collect and the specific context in which we collect it.
 
-Kalabox Inc DBA Tandem may process your Personal Data because:
+Lando System, Inc may process your Personal Data because:
 
 *   We need to perform a contract with you
 *   You have given us permission to do so
@@ -112,9 +122,9 @@ Kalabox Inc DBA Tandem may process your Personal Data because:
 
 ## Retention of Data
 
-Kalabox Inc DBA Tandem will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes and enforce our legal agreements and policies.
+Lando System, Inc will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes and enforce our legal agreements and policies.
 
-Kalabox Inc DBA Tandem will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer periods.
+Lando System, Inc will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer periods.
 
 ## Transfer of Data
 
@@ -124,16 +134,16 @@ If you are located outside United States and choose to provide information to us
 
 Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
 
-Kalabox Inc DBA Tandem will take all the steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organisation or a country unless there are adequate controls in place including the security of your data and other personal information.
+Lando System, Inc will take all the steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organisation or a country unless there are adequate controls in place including the security of your data and other personal information.
 
 ## Disclosure of Data
 
 ### Legal Requirements
 
-Kalabox Inc DBA Tandem may disclose your Personal Data in the good faith belief that such action is necessary to:
+Lando System, Inc may disclose your Personal Data in the good faith belief that such action is necessary to:
 
 *   To comply with a legal obligation
-*   To protect and defend the rights or property of Kalabox Inc DBA Tandem
+*   To protect and defend the rights or property of Lando System, Inc
 *   To prevent or investigate possible wrongdoing in connection with the Service
 *   To protect the personal safety of users of the Service or the public
 *   To protect against legal liability
@@ -142,9 +152,15 @@ Kalabox Inc DBA Tandem may disclose your Personal Data in the good faith belief 
 
 The security of your data is important to us but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
 
+## Our Policy on "Do Not Track" Signals under the California Online Protection Act (CalOPPA)
+
+We do not support Do Not Track ("DNT"). Do Not Track is a preference you can set in your web browser to inform websites that you do not want to be tracked.
+
+You can enable or disable Do Not Track by visiting the Preferences or Settings page of your web browser.
+
 ## Your Data Protection Rights under the General Data Protection Regulation (GDPR)
 
-If you are a resident of the European Economic Area (EEA), you have certain data protection rights. Kalabox Inc DBA Tandem aims to take reasonable steps to allow you to correct, amend, delete or limit the use of your Personal Data.
+If you are a resident of the European Economic Area (EEA), you have certain data protection rights. Lando System, Inc aims to take reasonable steps to allow you to correct, amend, delete or limit the use of your Personal Data.
 
 If you wish to be informed about what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.
 
@@ -160,7 +176,7 @@ In certain circumstances, you have the following data protection rights:
 
 *   **The right to data portability.** You have the right to be provided with a copy of the information we have on you in a structured, machine-readable and commonly used format.
 
-*   **The right to withdraw consent.** You also have the right to withdraw your consent at any time where Kalabox Inc DBA Tandem relied on your consent to process your personal information.
+*   **The right to withdraw consent.** You also have the right to withdraw your consent at any time where Lando System, Inc relied on your consent to process your personal information.
 
 Please note that we may ask you to verify your identity before responding to such requests.
 
@@ -217,3 +233,4 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 If you have any questions about this Privacy Policy, please contact us:
 
 *   By email: <support@lando.dev>
+*   By visiting this page on our website: <https://lando.dev/contact>

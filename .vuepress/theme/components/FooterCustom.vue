@@ -81,8 +81,8 @@
       <div class="footer-bottom">
         <div class="footer-copyright">© 2022 Lando System, Inc.</div>
         <ul class="footer-bottom-menu">
-          <li><a href="terms">Terms</a></li>
-          <li><a href="privacy">Privacy Policy</a></li>
+          <li><a href="/blog/terms">Terms</a></li>
+          <li><a href="/blog/privacy">Privacy Policy</a></li>
         </ul>
         <div class="footer-social">
           <a class="social-icon" href="https://github.com/lando/lando" target="_blank">
