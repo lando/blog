@@ -46,13 +46,16 @@ git clone https://github.com/lando/blog.git && cd blog
 yarn | npm install
 
 # Launch dev site
-DEBUG="@lando/*" VITE_GMAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY yarn dev
+DEBUG="@lando/*" yarn dev
+
+# Set a GitHub personal access token to avoid rate limiting
+GITHUB_TOKEN=MY_TOKEN DEBUG="@lando/*" yarn dev
 
 # Lint
 yarn lint
 
 # Build site
-DEBUG="@lando/*" VITE_GMAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY yarn build
+DEBUG="@lando/*" yarn build
 ```
 
 ### Using Lando
@@ -62,13 +65,13 @@ DEBUG="@lando/*" VITE_GMAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY yarn build
 lando start
 
 # Launch dev site
-VITE_GMAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY lando dev
+lando dev
 
 # Lint
 lando yarn lint
 
 # Build site
-VITE_GMAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY lando yarn build
+lando yarn build
 ```
 
 ## Releasing
