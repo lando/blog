@@ -298,9 +298,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@lando/vuepress-theme-default-plus@lando/vuepress-theme-default-plus#main":
-  version "1.0.0-beta.29"
-  resolved "https://codeload.github.com/lando/vuepress-theme-default-plus/tar.gz/67f754d424a1a431f481b6d27647a6303659d835"
+"@lando/vuepress-theme-default-plus@^1.0.0-beta.30":
+  version "1.0.0-beta.30"
+  resolved "https://registry.yarnpkg.com/@lando/vuepress-theme-default-plus/-/vuepress-theme-default-plus-1.0.0-beta.30.tgz#cb47e2d97010198905d33ce3465517e087ad9708"
+  integrity sha512-oP8xGYv65eHg71UySsp23/DeO/7Zr7fRktlxH0vVSu3pKhflLXUBtPnxNy+7YXe6ZnDUcRR4qiBDDK+HXQGZIA==
   dependencies:
     "@octokit/core" "^3.5.1"
     "@octokit/plugin-paginate-rest" "^2.17.0"
