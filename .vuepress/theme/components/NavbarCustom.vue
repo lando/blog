@@ -40,7 +40,7 @@ const themeLocale = useThemeLocaleData();
 const navbar = ref(null);
 const siteBrand = ref(null);
 const siteBrandLink = computed(
-  () => themeLocale.value.home || routeLocale.value
+  () => themeLocale.value.home || routeLocale.value,
 );
 const navbarBrandLogo = ref(themeLocale.value.logo);
 const navbarBrandTitle = computed(() => siteLocale.value.title);
