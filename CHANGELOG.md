@@ -1,3 +1,8 @@
+v4.0.0 [March 28, 2021](https://github.com/lando/website/releases/tag/v4.0.0)
+------------------------
+
+* Rebased on new theme framework
+
 v1.0.6 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.6)
 ------------------------
 
