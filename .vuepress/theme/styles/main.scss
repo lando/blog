@@ -54,13 +54,14 @@
 
 body {
   font-family: Lexend;
-  color: $landoGrey;
+  color: var(--c-text);
+  background: var(--c-bg);
 
   h1,
   h2,
   h3,
   h4 {
-    color: $landoGrey;
+    color: var(--c-text);
     font-family: Lexend;
     font-size: 4em;
     border: 0;

@@ -105,6 +105,9 @@ const authors = computed(() => {
 
 <style lang="scss" scoped>
 @import '../styles/main.scss';
+.dark .tag-page-summary-card-outer {
+  border: 1.5px dashed #794993;
+}
 .tag-page-summary-card-outer {
   box-shadow: 0px 14px 40px rgba(73,66,78,0.14);
   border-radius: 6px;
@@ -127,7 +130,7 @@ const authors = computed(() => {
       line-height: 1.7;
       opacity: .86;
       font-size: 1.25rem;
-      color: $landoGrey;
+      color: var(--c-text);
       font-weight: 400;
     }
     .tag-page-attribution {
@@ -135,7 +138,7 @@ const authors = computed(() => {
       display: flex;
       align-items: center;
       gap: .5rem;
-      color: $quotedText;
+      color: var(--c-text--quote);
       font-size: 1.5625rem;
       font-weight: 400;
       .authors {
@@ -144,7 +147,7 @@ const authors = computed(() => {
         .author {
           margin-right: 5px;
           a {
-            color: $quotedText;
+            color: var(--c-text--quote);
             font-weight: 400;
           }
         }
@@ -163,7 +166,7 @@ const authors = computed(() => {
       }
     }
     .read-more {
-      color: $electricPink;
+    color: var(--c-brand);
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1rem;

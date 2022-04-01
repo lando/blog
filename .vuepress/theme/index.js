@@ -13,7 +13,8 @@ module.exports = (options, app) => {
       '@theme/TagPageCard.vue': path.resolve(__dirname, 'components', 'TagPageCardCustom.vue'),
       '@theme/TOC.vue': path.resolve(__dirname, 'components', 'TOCCustom.vue'),
     },
-    darkMode: false,
+    darkMode: true,
+    logoDark: '/images/logo-white.png',
     layouts: path.resolve(__dirname, 'layouts'),
     plugins: [
       ['@vuepress/plugin-palette',

@@ -8,10 +8,21 @@
   --total-width: calc(var(--content-width) + var(--rightbar-width) + var(--rightbar-margin));
   --homepage-width: 1000px;
   --search-border-color: #BDB6C2;
-  --c-text-quote: $quotedText;
-  --c-text-lighter: $landoGrey;
+  --c-text: #49424E;
+  --c-text-light: #49424E;
+  --c-text-lighter: #49424E;
+  --c-text-lightest: #49424E;
+  --c-text-quote: #786F7E;
 }
 
 html.dark {
   --c-brand: #DD3F8F;
+  --c-text: #eeedef;
+  --c-text-quote: #eeedef;
+  --c-text-light: #eeedef;
+  --c-text-lightest: #eeedef;
+  --c-bg: radial-gradient(122.92% 80.31% at 63.14% 4.75%, #412B6B 0%, #261D2D 100%);
+  --c-bg-light: #412B6B;
+  --c-bg-lighter: #412B6B;
+  --search-border-color: #BDB6C2;
 }
