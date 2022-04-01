@@ -98,7 +98,7 @@ const lastUpdated = computed(() => {
     width: 90%;
     font-size: 1.375rem;
     font-weight: 600;
-    color: $landoGrey;
+    color: var(--c-text);
   }
   .attribution {
     color: var(--c-text-quote);

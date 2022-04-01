@@ -126,7 +126,7 @@ watch(activeIndex, value => {
   .header {
     font-weight: 700;
     font-size: 1.5rem;
-    color: $landoGrey;
+    color: var(--c-text);
   }
   .marker {
     position: absolute;
