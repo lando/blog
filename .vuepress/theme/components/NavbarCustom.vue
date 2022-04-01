@@ -31,11 +31,11 @@ import {computed, onMounted, ref, h} from 'vue';
 import {useThemeLocaleData, useDarkMode} from '@vuepress/theme-default/lib/client/composables';
 import NavbarItems from '@vuepress/theme-default/lib/client/components/NavbarItems.vue';
 import ToggleSidebarButtonCustom from './ToggleSidebarButtonCustom.vue';
-import ToggleDarkModeButton from '@theme/ToggleDarkModeButton.vue'
+import ToggleDarkModeButton from '@theme/ToggleDarkModeButton.vue';
 
 defineEmits(['toggle-sidebar']);
 
-const enableDarkMode = computed(() => themeLocale.value.darkMode)
+const enableDarkMode = computed(() => themeLocale.value.darkMode);
 
 const routeLocale = useRouteLocale();
 const siteLocale = useSiteLocaleData();
@@ -49,9 +49,9 @@ const siteBrandLink = computed(
 );
 const navbarBrandLogo = computed(() => {
   if (isDarkMode.value && themeLocale.value.logoDark !== undefined) {
-    return themeLocale.value.logoDark
+    return themeLocale.value.logoDark;
   }
-  return themeLocale.value.logo
+  return themeLocale.value.logo;
 });
 const navbarBrandTitle = computed(() => siteLocale.value.title);
 const linksWrapperMaxWidth = ref(0);
