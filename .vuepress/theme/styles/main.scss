@@ -85,14 +85,14 @@ body {
   }
 
   p {
-    color: $landoGrey;
+    color: var(--c-text);
     a {
-      color: $landoGrey;
+      color: var(--c-text);
       font-weight: bold;
       text-decoration: none;
       position: relative;
       &:hover {
-        color: $landoGrey;
+        color: var(--c-text);
         &:after {
           height: 100%;
         }
@@ -145,15 +145,18 @@ body {
         .header {
           font-weight: 700;
           font-size: 1.5rem;
-          color: $landoGrey;
+          color: var(--c-text);
         }
         .tag-link {
           text-transform: capitalize;
-          border: 1px solid $quotedText;
+          border: 1px solid var(--c-text-quote);
           border-radius: 4px;
-          color: $quotedText;
+          color: var(--c-text-quote);
           font-size: .875rem;
           padding: 5px 8px;
+          &:hover {
+            background-color: var(--c-brand);
+          }
         }
       }
       .page.blog {
@@ -167,16 +170,29 @@ body {
           }
           blockquote {
             font-size: 1.125rem;
-            border-left: 3px solid $electricPink;
+            border-left: 3px solid var(--c-brand);
             p {
               font-size: 1.125rem;
-              color: $quotedText;
+              color: var(--c-text-quote);
             }
           }
         }
       }
     }
 
+  }
+}
+
+html.dark body p a {
+  color: var(--c-brand);
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  &:hover {
+    color: var(--c-brand);
+  }
+  &:after {
+    display: none;
   }
 }
 
