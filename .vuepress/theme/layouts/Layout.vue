@@ -38,6 +38,7 @@ import FooterCta from './../components/FooterCta.vue';
     height: 100%;
     width: 100%;
     z-index: 100;
+    background: var(--c-bg);
   }
 }
 

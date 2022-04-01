@@ -161,6 +161,12 @@ const getCssValue = (el, property) => {
 @media (max-width: $MQNarrow) {
   .navbar {
     padding: 2rem;
+    .logo-wrapper {
+      a {
+        position: relative;
+        top: -18px;
+      }
+    }
   }
 }
 
