@@ -2,10 +2,14 @@ const _ = require('lodash');
 const {path} = require('@vuepress/utils');
 const debug = require('debug')('@lando/theme-blog');
 
-module.exports = (options, app) => {
+const parentTheme = require('@lando/vuepress-theme-default-plus');
+const {palettePlugin} = require('@vuepress/plugin-palette');
+const {registerComponentsPlugin} = require('@vuepress/plugin-register-components');
+
+module.exports = options => {
   return {
-    theme: path.resolve(__dirname, '.'),
-    extends: '@lando/vuepress-theme-default-plus',
+    name: '@lando/theme-blog',
+    extends: parentTheme(options),
     alias: {
       '@theme/BlogHeader.vue': path.resolve(__dirname, 'components', 'BlogHeaderCustom.vue'),
       '@theme/Home.vue': path.resolve(__dirname, 'components', 'Home.vue'),
@@ -17,19 +21,15 @@ module.exports = (options, app) => {
     logoDark: '/images/logo-white.png',
     layouts: path.resolve(__dirname, 'layouts'),
     plugins: [
-      ['@vuepress/plugin-palette',
-        {
-          preset: 'sass',
-          userStyleFile: path.resolve(__dirname, 'styles', 'index.scss'),
-          userPaletteFile: path.resolve(__dirname, 'styles', 'palette.scss'),
-        },
-      ],
-      ['@vuepress/register-components',
-        {
-          componentsDir: path.resolve(__dirname, 'components'),
-          componentsPatterns: ['*.vue', '**/*.vue'],
-        },
-      ],
+      palettePlugin({
+        preset: 'sass',
+        userStyleFile: path.resolve(__dirname, 'styles', 'index.scss'),
+        userPaletteFile: path.resolve(__dirname, 'styles', 'palette.scss'),
+      }),
+      registerComponentsPlugin({
+        componentsDir: path.resolve(__dirname, './components'),
+        componentsPatterns: ['*.vue', '**/*.vue'],
+      }),
     ],
     extendsPageOptions: (pageOptions, app) => {
       if (pageOptions.filePath && pageOptions.filePath.startsWith(app.dir.source('content'))) {
