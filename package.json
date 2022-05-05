@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
-    "@lando/vuepress-theme-default-plus": "lando/vuepress-theme-default-plus#main",
+    "@lando/vuepress-theme-default-plus": "1.0.0-beta.33",
     "@vuepress/plugin-palette": "^2.0.0-beta.36",
     "@vuepress/plugin-register-components": "^2.0.0-beta.36",
     "babel-eslint": "^10.1.0",
