@@ -17,7 +17,7 @@
       </div>
 
       <div class="navbar-links-right-wrapper" :style="linksWrapperStyle">
-        <ToggleDarkModeButton v-if="enableDarkMode" />
+        <ToggleColorModeButton v-if="enableColorModeSwitch" />
         <a href="/download/" class="btn btn-primary can-hide">Get Lando!</a>
         <ToggleSidebarButtonCustom @toggle="$emit('toggle-sidebar')" />
       </div>
@@ -31,11 +31,11 @@ import {computed, onMounted, ref, h} from 'vue';
 import {useThemeLocaleData, useDarkMode} from '@vuepress/theme-default/lib/client/composables';
 import NavbarItems from '@vuepress/theme-default/lib/client/components/NavbarItems.vue';
 import ToggleSidebarButtonCustom from './ToggleSidebarButtonCustom.vue';
-import ToggleDarkModeButton from '@theme/ToggleDarkModeButton.vue';
+import ToggleColorModeButton from '@theme/ToggleColorModeButton.vue';
 
 defineEmits(['toggle-sidebar']);
 
-const enableDarkMode = computed(() => themeLocale.value.darkMode);
+const enableColorModeSwitch = computed(() => themeLocale.value.colorModeSwitch);
 
 const routeLocale = useRouteLocale();
 const siteLocale = useSiteLocaleData();
@@ -147,7 +147,7 @@ const getCssValue = (el, property) => {
     .navbar-links-right-wrapper {
       justify-content: flex-end;
     }
-    .toggle-dark-button {
+    .toggle-color-mode-button {
       margin: 0px 1rem;
       align-self: center;
     }
