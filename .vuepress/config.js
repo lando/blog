@@ -7,8 +7,9 @@ module.exports = {
   description: 'A liberating blog by and for professional developers. We share things about tech, DevOps and development using but not limited to Lando.',
   theme: customTheme({
     // PARENT CONFIG
+    colorMode: 'auto',
+    colorModeSwitch: true,
     contributors: true,
-    darkMode: true,
     docsDir: '.',
     docsBranch: 'main',
     editLink: true,
