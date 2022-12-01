@@ -28,8 +28,8 @@
 <script setup>
 import {useRouteLocale, useSiteLocaleData, withBase, ClientOnly} from '@vuepress/client';
 import {computed, onMounted, ref, h} from 'vue';
-import {useThemeLocaleData, useDarkMode} from '@vuepress/theme-default/lib/client/composables';
-import NavbarItems from '@vuepress/theme-default/lib/client/components/NavbarItems.vue';
+import {useThemeLocaleData, useDarkMode} from '@vuepress/theme-default/client';
+import NavbarItems from '@vuepress/theme-default/components/NavbarItems.vue';
 import ToggleSidebarButtonCustom from './ToggleSidebarButtonCustom.vue';
 import ToggleColorModeButton from '@theme/ToggleColorModeButton.vue';
 

@@ -1,11 +1,11 @@
-const {path} = require('@vuepress/utils');
-const customTheme = require(path.resolve(__dirname, 'theme'));
+import {defineUserConfig} from '@vuepress/cli';
+import {blogTheme} from './theme/index.js';
 
-module.exports = {
+export default defineUserConfig({
   base: '/blog/',
   title: 'Lando',
   description: 'A liberating blog by and for professional developers. We share things about tech, DevOps and development using but not limited to Lando.',
-  theme: customTheme({
+  theme: blogTheme({
     // PARENT CONFIG
     colorMode: 'auto',
     colorModeSwitch: true,
@@ -86,4 +86,4 @@ module.exports = {
     ['meta', {name: 'msapplication-TileColor', content: '#DD3F8F'}],
     ['meta', {name: 'theme-color', content: '#ffffff'}],
   ],
-};
+});
