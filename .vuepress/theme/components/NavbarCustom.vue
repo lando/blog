@@ -28,8 +28,8 @@
 <script setup>
 import {useRouteLocale, useSiteLocaleData, withBase, ClientOnly} from '@vuepress/client';
 import {computed, onMounted, ref, h} from 'vue';
-import {useThemeLocaleData, useDarkMode} from '@vuepress/theme-default/lib/client/composables';
-import NavbarItems from '@vuepress/theme-default/lib/client/components/NavbarItems.vue';
+import {useThemeLocaleData, useDarkMode} from '@vuepress/theme-default/client';
+import NavbarItems from '@vuepress/theme-default/components/NavbarItems.vue';
 import ToggleSidebarButtonCustom from './ToggleSidebarButtonCustom.vue';
 import ToggleColorModeButton from '@theme/ToggleColorModeButton.vue';
 
@@ -111,49 +111,51 @@ const getCssValue = (el, property) => {
 
 <style lang="scss">
 @import '../styles/main.scss';
-.navbar {
-  position: relative;
-  background: inherit;
-  border-bottom: none;
-  display: flex;
-  padding: 1.25rem 0 0 0;
-  max-width: var(--total-width);
-  margin: auto;
-  z-index: 200;
-  font-size: 1.375rem;
-  .logo-wrapper {
-    width: 173px;
-  }
-  .logo {
-    margin-right: 3.8125rem;
-  }
-  .navbar-interior {
-    width: var(--total-width);
+  .theme-container {
+    .navbar {
+    position: relative;
+    background: inherit;
+    border-bottom: none;
     display: flex;
-    .navbar-items-wrapper, .navbar-links-right-wrapper {
-      position: static;
-      display: inline-flex;
-      margin-left: 3rem;
-      position: static;
-      flex-grow: 1;
-      align-items: center;
-      // Should probably make our own navbar-links and do this there.
-      .navbar-items {
-        .navbar-item {
-          font-size: 1rem;
+    padding: 1.25rem 0 0 0;
+    max-width: var(--total-width);
+    margin: auto;
+    z-index: 200;
+    font-size: 1.375rem;
+    .logo-wrapper {
+      width: 173px;
+    }
+    .logo    {
+      margin-right: 3.8125rem;
+    }
+    .navbar-interior {
+      width: var(--total-width);
+      display: flex;
+      .navbar-items-wrapper, .navbar-links-right-wrapper {
+        position: static;
+        display: inline-flex;
+        margin-left: 3rem;
+        position: static;
+        flex-grow: 1;
+        align-items: center;
+        // Should probably make our own navbar-links and do this there.
+        .navbar-items {
+          .navbar-item {
+            font-size: 1rem;
+          }
         }
       }
-    }
-    .navbar-links-right-wrapper {
-      justify-content: flex-end;
-    }
-    .toggle-color-mode-button {
-      margin: 0px 1rem;
-      align-self: center;
-    }
-    .toggle-sidebar-button {
-      position: static;
-      padding: .3rem 1.25rem;
+      .navbar-links-right-wrapper {
+        justify-content: flex-end;
+      }
+      .toggle-color-mode-button {
+        margin: 0px 1rem;
+        align-self: center;
+      }
+      .toggle-sidebar-button {
+        position: static;
+        padding: .3rem 1.25rem;
+      }
     }
   }
 }

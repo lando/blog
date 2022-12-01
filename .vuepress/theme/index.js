@@ -1,15 +1,22 @@
-const _ = require('lodash');
-const {path} = require('@vuepress/utils');
-const debug = require('debug')('@lando/theme-blog');
+// Mods
+import _ from 'lodash';
+import Debug from 'debug';
 
-const parentTheme = require('@lando/vuepress-theme-default-plus');
-const {palettePlugin} = require('@vuepress/plugin-palette');
-const {registerComponentsPlugin} = require('@vuepress/plugin-register-components');
+// vuepress things
+import {getDirname, path} from '@vuepress/utils';
 
-module.exports = options => {
+// plugins/themes
+import {defaultThemePlus} from '@lando/vuepress-theme-default-plus';
+import {palettePlugin} from '@vuepress/plugin-palette';
+import {registerComponentsPlugin} from '@vuepress/plugin-register-components';
+
+const __dirname = getDirname(import.meta.url);
+const debug = Debug('@lando/theme-blog'); // eslint-disable-line
+
+export const blogTheme = options => {
   return {
     name: '@lando/theme-blog',
-    extends: parentTheme(options),
+    extends: defaultThemePlus(options),
     alias: {
       '@theme/BlogHeader.vue': path.resolve(__dirname, 'components', 'BlogHeaderCustom.vue'),
       '@theme/Home.vue': path.resolve(__dirname, 'components', 'Home.vue'),
@@ -17,6 +24,7 @@ module.exports = options => {
       '@theme/TagPageCard.vue': path.resolve(__dirname, 'components', 'TagPageCardCustom.vue'),
       '@theme/TOC.vue': path.resolve(__dirname, 'components', 'TOCCustom.vue'),
     },
+    clientConfigFile: path.resolve(__dirname, 'client.js'),
     darkMode: true,
     logoDark: '/images/logo-white.png',
     layouts: path.resolve(__dirname, 'layouts'),
