@@ -336,10 +336,10 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@lando/vuepress-theme-default-plus@1.0.0-beta.40":
-  version "1.0.0-beta.40"
-  resolved "https://registry.yarnpkg.com/@lando/vuepress-theme-default-plus/-/vuepress-theme-default-plus-1.0.0-beta.40.tgz#4bd0e6e9600f49f59c841d9134627938c1848474"
-  integrity sha512-BPHaeS3fLUXrFnniA3efi+Hwxg/0VaG+M+8Oq8Skk+FxOJzhFU/+TW6ITu3eRWhw4GQ0iPmd1mKVbJJvpbMN9A==
+"@lando/vuepress-theme-default-plus@1.0.0-beta.41":
+  version "1.0.0-beta.41"
+  resolved "https://registry.yarnpkg.com/@lando/vuepress-theme-default-plus/-/vuepress-theme-default-plus-1.0.0-beta.41.tgz#27bcb56e9e5772a8fa85de7bb19f7306318f482a"
+  integrity sha512-QwztvOc+MoqNgpLl9zmpVx+BT99qE0XN6vfaw13In64bO6YLIZR19piO802OrkoHusXAR/AQJO170ckyAJkB7Q==
   dependencies:
     "@octokit/core" "^3.5.1"
     "@octokit/plugin-paginate-rest" "^2.17.0"
