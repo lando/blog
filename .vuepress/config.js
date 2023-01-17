@@ -1,14 +1,15 @@
-const {path} = require('@vuepress/utils');
+import {defineUserConfig} from '@vuepress/cli';
+import {blogTheme} from './theme/index.js';
 
-module.exports = {
+export default defineUserConfig({
   base: '/blog/',
   title: 'Lando',
   description: 'A liberating blog by and for professional developers. We share things about tech, DevOps and development using but not limited to Lando.',
-  theme: path.resolve(__dirname, './theme'),
-  themeConfig: {
+  theme: blogTheme({
     // PARENT CONFIG
+    colorMode: 'auto',
+    colorModeSwitch: true,
     contributors: true,
-    darkMode: true,
     docsDir: '.',
     docsBranch: 'main',
     editLink: true,
@@ -72,7 +73,7 @@ module.exports = {
     tags: true,
     toc: true,
     versionsPage: false,
-  },
+  }),
   head: [
     ['link', {rel: 'preconnect', href: '//fonts.googleapis.com'}],
     ['link', {rel: 'preconnect', href: '//fonts.gstatic.com', crossorigin: true}],
@@ -85,4 +86,4 @@ module.exports = {
     ['meta', {name: 'msapplication-TileColor', content: '#DD3F8F'}],
     ['meta', {name: 'theme-color', content: '#ffffff'}],
   ],
-};
+});

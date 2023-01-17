@@ -46,7 +46,7 @@
 // Deps
 import {computed} from 'vue';
 import {usePageData, usePageFrontmatter} from '@vuepress/client';
-import {useThemeLocaleData} from '@vuepress/theme-default/lib/client/composables';
+import {useThemeLocaleData} from '@vuepress/theme-default/client';
 
 const props = defineProps({
   author: {
@@ -98,7 +98,7 @@ const lastUpdated = computed(() => {
     width: 90%;
     font-size: 1.375rem;
     font-weight: 600;
-    color: $landoGrey;
+    color: var(--c-text);
   }
   .attribution {
     color: var(--c-text-quote);
