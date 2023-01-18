@@ -117,9 +117,14 @@ const authors = computed(() => {
   a {
     color: var(--c-text-light);
   }
+  a:hover {
+    text-decoration: none;
+  }
+
   .tag-page-summary-card {
     h2 {
       border: 0;
+      margin-top: -2em;
     }
     &:hover {
       transition: all 0.2s;
