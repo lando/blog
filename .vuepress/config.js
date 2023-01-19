@@ -19,7 +19,6 @@ export default defineUserConfig({
     logo: '/images/logo.png',
     logoDark: '/images/logo-white.png',
     repo: 'lando/blog',
-    sidebar: [],
 
     // THEME CONFIG
     baseUrl: 'https://lando.dev',
@@ -37,12 +36,6 @@ export default defineUserConfig({
     contributorsExclude: [
       'dependabot[bot]',
     ],
-    contributorsPage: {
-      auto: true,
-      exclude: [
-        'dependabot[bot]',
-      ],
-    },
     ga: {
       id: 'G-HPJSRFPPPR',
     },
