@@ -1,5 +1,5 @@
 ---
-title: Diffy Integration
+title: Using Diffy with Lando
 byline: Visual regression testing for your Lando website
 blog: true
 
@@ -17,6 +17,8 @@ tags:
   - lando
   - Yuri Gerasymov
 ---
+
+**NOTE: Lando is not affiliated with and does not receive compensation from Diffy, but we do think it's a cool tool and hope Yuri's post helps Lando users who are curious about visual regression testing.**
 
 [Diffy](https://diffy.website) is a visual regression testing tool that allows you to take screenshots of your website and compare them so you know what pages changed because of your latest code update. It is a great way to validate your updates, theme changes, or any other changes that might affect your site.
 
