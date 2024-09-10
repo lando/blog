@@ -5,7 +5,7 @@ blog: true
 
 path: 2024-09-10 12:00:00
 updated:
-  timestamp: 1726008908
+  timestamp: 1726008904000
 
 author:
   name: Alec Reynolds
