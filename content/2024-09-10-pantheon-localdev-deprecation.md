@@ -1,9 +1,9 @@
 ---
-title: Pantheon Localdev Deprecation
+title: Pantheon LocalDev Deprecation
 byline: Goodbye to an old friend, hello to the raw power of Lando.
 blog: true
 
-path: 2024-09-19
+path: 2024-09-10 12:00:00
 updated:
   timestamp: 1726008908
 
