@@ -3,9 +3,9 @@ title: Pantheon Localdev Launch
 byline: Intuitive Pantheon user interface, combined with raw, unadulterated power of Lando underneath the hood.
 blog: true
 
-path: 2021-01-26
+path: 2021-01-26 12:00:00
 updated:
-  timestamp: 1611637200000
+  timestamp: 1611691200000
 
 author:
   name: Alec Reynolds
@@ -17,6 +17,8 @@ tags:
   - lando
   - Alec Reynolds
 ---
+
+**NOTE: Pantheon LocalDev has been officially deprecated. [Read our blog post](./2024-09-10-pantheon-localdev-deprecation.md) for details on how to upgrade to Lando for your Pantheon local development needs.**
 
 There's no shame in saying it: sometimes even the most hardcore "neckbeard" developer just wants a GUI. A warm, friendly face for an application that we can click around in. Something that doesn't require us to remember esoteric commands or read around a CLI prompt to figure out option flags, especially if you're striving for your [Ballmer Peak](https://xkcd.com/323/). Whether you're a dyed-in-the-wool veteran coder or someone who makes websites out of necessity, a GUI tool can lower your cognitive load so you can focus on more important things.
 
