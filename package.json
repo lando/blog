@@ -1,7 +1,7 @@
 {
   "name": "@lando/blog",
   "description": "Blog for the best local development solution in the galaxy.",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "version": "4.0.0",
   "repository": {
     "type": "git",
