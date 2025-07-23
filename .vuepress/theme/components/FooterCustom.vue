@@ -83,6 +83,7 @@
         <ul class="footer-bottom-menu">
           <li><a href="https://lando.dev/terms">Terms of Use</a></li>
           <li><a href="https://lando.dev/privacy">Privacy Policy</a></li>
+          <li><a href="https://lando.dev/coc">Code of Conduct</a></li>
         </ul>
         <div class="footer-social">
           <a class="social-icon" href="https://github.com/lando/lando" target="_blank">
