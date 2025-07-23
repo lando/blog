@@ -259,14 +259,24 @@ const customStyles = {
     align-items: center;
     max-width: var(--total-width);
     .footer-copyright {
-      color: hsl(var(--c-bg), 99%);
+      color: #dedb8e;
     }
     .footer-bottom-menu {
       display: flex;
       list-style: none;
-      gap: 2rem;
+      gap: 0rem;
       li a {
         color: $text-dark;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      li {
+        &:not(:last-child)::after {
+          color: #dedb8e;
+          content: " |";
+          padding: 0 0.5em;
+        }
       }
     }
     .footer-social {
@@ -294,12 +304,21 @@ const customStyles = {
   #footer .footer-content .footer-column.company {
     margin-left: 0rem;
   }
+  #footer .footer-bottom {
+    flex-direction: column;
+    .footer-social {
+      margin-left: 0;
+    }
+  }
 }
 @media (max-width: $MQMobile) {
   #footer {
     padding: 0rem;
     .footer-column {
       width: auto;
+    }
+    .footer-bottom-wrapper {
+      padding: 1rem 1rem;
     }
     .footer-newsletter {
       .newsletter__wrap {
