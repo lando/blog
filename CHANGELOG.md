@@ -1,5 +1,7 @@
 ## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
 
+* Added 501(c)(3) status and link to IRS Determination Letter
+
 ## v4.0.0 [March 28, 2021](https://github.com/lando/website/releases/tag/v4.0.0)
 
 * Rebased on new theme framework
