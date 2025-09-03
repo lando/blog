@@ -1,13 +1,11 @@
-name: Tests
+name: Lint Code
 
 on:
   pull_request:
 
 jobs:
-  docs-tests:
+  lint:
     runs-on: ${{ matrix.os }}
-    env:
-      TERM: xterm
     strategy:
       matrix:
         os:
@@ -16,15 +14,13 @@ jobs:
           - '20'
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
       - name: Install dependencies
         run: npm clean-install --prefer-offline --frozen-lockfile
-      - name: Lint docs code
+      - name: Run code linter
         run: npm run lint
-      - name: Build Docs
-        run: npm run build

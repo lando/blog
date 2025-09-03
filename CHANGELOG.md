@@ -1,39 +1,33 @@
-v4.0.0 [March 28, 2021](https://github.com/lando/website/releases/tag/v4.0.0)
-------------------------
+## {{ UNRELEASED_VERSION }} - [{{ UNRELEASED_DATE }}]({{ UNRELEASED_LINK }})
+
+## v4.0.0 [March 28, 2021](https://github.com/lando/website/releases/tag/v4.0.0)
 
 * Rebased on new theme framework
 
-v1.0.6 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.6)
-------------------------
+## v1.0.6 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.6)
 
 * Adjust assets
 
-v1.0.5 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.5)
-------------------------
+## v1.0.5 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.5)
 
 * More Performance Tweaks
 
-v1.0.4 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.4)
-------------------------
+## v1.0.4 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.4)
 
 * Performance Tweaks
 
-v1.0.3 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.3)
-------------------------
+## v1.0.3 [November 10, 2021](https://github.com/lando/website/releases/tag/v1.0.3)
 
 * Adjust linter and google analytics tag Performance Tweaks
 
-v1.0.2 [November 2, 2021](https://github.com/lando/website/releases/tag/v1.0.2)
-------------------------
+## v1.0.2 [November 2, 2021](https://github.com/lando/website/releases/tag/v1.0.2)
 
 * Adjust metatags
 
-v1.0.1 [November 2, 2021](https://github.com/lando/website/releases/tag/v1.0.1)
-------------------------
+## v1.0.1 [November 2, 2021](https://github.com/lando/website/releases/tag/v1.0.1)
 
 * Adjust theme config
 
-v1.0.0 [November 2, 2021](https://github.com/lando/website/releases/tag/v1.0.0)
-------------------------
+## v1.0.0 [November 2, 2021](https://github.com/lando/website/releases/tag/v1.0.0)
 
 * Migration to Netlify
