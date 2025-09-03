@@ -79,9 +79,16 @@
     </div>
     <div class="footer-bottom-wrapper">
       <div class="footer-bottom">
-        <div class="footer-copyright">©2025 Lando Alliance</div>
+        <div class="footer-copyright">© 2025 Lando Alliance
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1Gms46fU-PKHnze49cKE-sCIxJWv7SeiF/view"
+          >
+            a 501(c)(3) nonprofit organization
+          </a>
+        </div>
         <ul class="footer-bottom-menu">
-          <li><a href="https://lando.dev/terms">Terms of Use</a></li>
+          <li><a href="https://lando.dev/terms">Terms</a></li>
           <li><a href="https://lando.dev/privacy">Privacy Policy</a></li>
           <li><a href="https://lando.dev/coc">Code of Conduct</a></li>
         </ul>
@@ -112,16 +119,18 @@ const customStyles = {
 <style lang="scss">
 @import '../styles/main.scss';
 #footer {
-  font-size: 1rem;
+  font-size: 17px;
+  font-weight: 500;
   margin-top: 2rem;
   overflow-y: hidden;
   background-color: $background-dark;
   color: $text-dark;
   margin-top: 2rem;
   .footer-wrapper {
-    max-width: var(--content-width);
+    max-width: 1242px;
     margin: 0 auto;
     padding: 2rem 2.5rem;
+    padding-top: 0;
   }
   .footer-top {
     display: flex;
@@ -137,8 +146,10 @@ const customStyles = {
       .post-subscribe {
         .newsletter__wrap {
           background-color: $background-dark;
+          padding-bottom: 0;
+          padding-right: 0;
           h3 {
-            font-weight:400;
+            font-weight: 400;
             font-size: .875rem;
             line-height: 150%;
             color: $text-dark;
@@ -151,9 +162,9 @@ const customStyles = {
           .subscribe-form {
             display: flex;
             .subscribe-input {
+              font-family: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
               width: 100%;
               box-sizing: border-box;
-              padding: 10px 80px 10px 20px;
               margin: 0;
               height: 50px;
               border: none;
@@ -168,11 +179,19 @@ const customStyles = {
               &.disabled {
                 opacity: .5;
               }
+              &::placeholder {
+                font-size: 16px;
+              }
             }
             input.button {
+              font-family: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 1rem;
               opacity: 1;
               display: inline-block;
               border-radius: 0px 6px 6px 0px;
+              padding: 0 4rem;
               height: 50px;
               border: none;
               :after {
@@ -203,16 +222,24 @@ const customStyles = {
     background-color: hsl(var(--c-bg), 12%);
     padding: 2em 0;
     gap: 4rem;
+    font-weight: 400;
+    h3 {
+      font-weight: 800;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 1.125em;
+    }
     ul {
       padding: 0;
       li {
         list-style: none;
         color: hsl(var(--c-bg), 90%);
-        font-size: .875em;
-        font-weight: 700;
+        font-size: 16.5px;
         margin: 0;
         a {
           color: hsl(var(--c-bg), 90%);
+          font-weight: 400;
         }
         a:hover {
           text-decoration: underline;
@@ -251,15 +278,28 @@ const customStyles = {
   background-color: var(--c-brand);
   color: $text-dark;
   font-size: .875rem;
-  padding: 1rem 6.25rem;
+  padding: 1rem 0rem;
   .footer-bottom {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     max-width: var(--total-width);
+    font-weight: 400;
     .footer-copyright {
       color: #dedb8e;
+      display: flex;
+      text-align: center;
+      font-weight: 400;
+      gap: 15px;;
+      a {
+        gap: 1em;
+        color: #eeedef;
+        font-weight: 400;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
     .footer-bottom-menu {
       display: flex;
@@ -267,6 +307,7 @@ const customStyles = {
       gap: 0rem;
       li a {
         color: $text-dark;
+        font-weight: 400;
         &:hover {
           text-decoration: underline;
         }
@@ -300,6 +341,13 @@ const customStyles = {
     transform: translateY(+200%);
   }
 }
+
+@media (max-width: 1350px) {
+  #footer .footer-bottom-wrapper {
+    padding: 1rem 2rem;
+  }
+}
+
 @media (max-width: $MQNarrow) {
   #footer .footer-content .footer-column.company {
     margin-left: 0rem;
@@ -319,6 +367,11 @@ const customStyles = {
     }
     .footer-bottom-wrapper {
       padding: 1rem 1rem;
+      .footer-copyright {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+      }
     }
     .footer-newsletter {
       .newsletter__wrap {

@@ -1,9 +1,9 @@
 name: lando-blog
 services:
   node:
-    type: node:14
+    type: node:20
     build:
-      - yarn install
+      - npm install
     scanner: false
     ssl: false
     sslExpose: false
@@ -17,6 +17,6 @@ tooling:
     service: node
   dev:
     service: node
-    cmd: yarn dev --port 8022
+    cmd: npm run dev --port 8022
     env:
       DEBUG: "@lando/*"
