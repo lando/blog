@@ -40,3 +40,11 @@ coverage/
 .cache
 dist
 _site
+
+
+# Syncthing
+.stfolder/
+.stversions/
+.stignore
+*.sync-conflict-*
+
