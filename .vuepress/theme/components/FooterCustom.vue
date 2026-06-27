@@ -1,10 +1,13 @@
 <template>
   <div id="footer">
     <FooterCta
-      heading="Like the Lando sound?"
-      text="If you're digging the righteous grooves of Lando, maybe it's time to pick up the axe and start jamming. Download Lando and experience the full glory of development without borders."
-      ctaText="Get Lando"
-      ctaLink="/download"
+      heading="Support free developer tools"
+      text="Lando is free and open source. Donations help Lando Alliance maintain the software, documentation, events, and community support that keep it accessible."
+      ctaText="Donate"
+      ctaLink="https://github.com/sponsors/lando"
+      ctaTarget="_blank"
+      ctaRel="noopener noreferrer"
+      :showHeart="true"
     />
     <div class="footer-wrapper">
       <div class="footer-top">
@@ -26,12 +29,12 @@
             <div class="footer-column-third">
               <h4>Getting Started</h4>
               <ul>
-                <li><a href="https://docs.lando.dev/basics/" target="_blank">Introduction</a></li>
-                <li><a href="https://docs.lando.dev/basics/basics.html" target="_blank">Basics</a></li>
-                <li><a href="https://docs.lando.dev/basics/installation.html" target="_blank">Installation</a></li>
-                <li><a href="https://docs.lando.dev/basics/first-app.html" target="_blank">First App</a></li>
-                <li><a href="https://docs.lando.dev/basics/usage" target="_blank">Usage</a></li>
-                <li><a href="https://docs.lando.dev/config/lando.html" target="_blank">Landofile</a></li>
+                <li><a href="https://docs.lando.dev/getting-started/" target="_blank">Introduction</a></li>
+                <li><a href="https://docs.lando.dev/getting-started/what-it-do.html" target="_blank">Basics</a></li>
+                <li><a href="https://docs.lando.dev/install/" target="_blank">Installation</a></li>
+                <li><a href="https://docs.lando.dev/getting-started/first-app.html" target="_blank">First App</a></li>
+                <li><a href="https://docs.lando.dev/cli/" target="_blank">Usage</a></li>
+                <li><a href="https://docs.lando.dev/landofile/" target="_blank">Landofile</a></li>
               </ul>
             </div>
             <div class="footer-column-third">
@@ -40,7 +43,7 @@
                 <li><a href="https://github.com/lando/lando" target="_blank">Lando</a></li>
                 <li><a href="https://github.com/lando/hyperdrive" target="_blank">Hyperdrive</a></li>
                 <li><a href="https://github.com/lando/leia" target="_blank">Leia</a></li>
-                <li><a href="https://github.com/lando/lando/tree/master/docs" target="_blank">Docs</a></li>
+                <li><a href="https://github.com/lando/core/" target="_blank">Docs</a></li>
                 <li><a href="https://github.com/lando/website" target="_blank">Website</a></li>
                 <li><a href="https://github.com/lando/blog" target="_blank">Blog</a></li>
                 <li><a href="https://github.com/lando/events" target="_blank">Events</a></li>
@@ -49,28 +52,29 @@
             <div class="footer-column-third">
               <h4>Community</h4>
               <ul>
-                <li><a href="https://docs.lando.dev/guides/lando-info.html" target="_blank">Slack</a></li>
-                <li><a href="https://docs.lando.dev/help/logs.html" target="_blank">GitHub Issues</a></li>
-              </ul>
-              <h4>Sponsor</h4>
-              <ul>
-                <li><a href="https://github.com/sponsors/lando" target="_blank">GitHub</a></li>
-                <li><a href="https://www.patreon.com/join/devwithlando?" target="_blank">Patreon</a></li>
-                <li><a href="https://opencollective.com/lando" target="_blank">OpenCollective</a></li>
+                <li><a href="https://www.launchpass.com/devwithlando" target="_blank">Slack</a></li>
+                <li><a href="https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3Alando" target="_blank">GitHub Issues</a></li>
+                <li><a href="https://www.lando.dev/blog/tag/case-study/">Case Studies</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="footer-column company">
-          <h3>Company</h3>
+          <h3>Lando Alliance</h3>
           <div class="footer-column-inner">
             <div class="footer-column-half">
-              <h4>About Us</h4>
+              <h4>Nonprofit</h4>
               <ul>
-                <li><a href="https://blog.lando.dev/tag/case-study/">Case Studies</a></li>
-                <li><a href="https://blog.lando.dev/tag/lando/">Blog</a></li>
-                <li><a href="https://events.lando.dev">Events</a></li>
-                <li><a href="/contact/">Contact Us</a></li>
+                <li><a href="https://www.lando.dev/mission">Mission</a></li>
+                <li><a href="https://www.lando.dev/blog">Blog</a></li>
+                <li><a href="https://www.lando.dev/events">Events</a></li>
+                <li><a href="https://www.lando.dev/support">Support</a></li>
+                <li><a href="https://www.lando.dev/contact">Contact</a></li>
+                <li><a href="https://github.com/sponsors/lando" target="_blank" rel="noopener noreferrer">Donate</a></li>
+              </ul>
+              <hr>
+              <ul>
+                <li><a href="https://drive.google.com/file/d/1Gms46fU-PKHnze49cKE-sCIxJWv7SeiF/view" target="_blank">501(c)(3) Letter</a></li>
               </ul>
             </div>
           </div>
@@ -79,7 +83,7 @@
     </div>
     <div class="footer-bottom-wrapper">
       <div class="footer-bottom">
-        <div class="footer-copyright">© 2025 Lando Alliance
+        <div class="footer-copyright">© 2026 Lando Alliance
           <a
             target="_blank"
             href="https://drive.google.com/file/d/1Gms46fU-PKHnze49cKE-sCIxJWv7SeiF/view"
@@ -88,9 +92,9 @@
           </a>
         </div>
         <ul class="footer-bottom-menu">
-          <li><a href="https://lando.dev/terms">Terms</a></li>
-          <li><a href="https://lando.dev/privacy">Privacy Policy</a></li>
-          <li><a href="https://lando.dev/coc">Code of Conduct</a></li>
+          <li><a href="https://www.lando.dev/terms">Terms</a></li>
+          <li><a href="https://www.lando.dev/privacy">Privacy Policy</a></li>
+          <li><a href="https://www.lando.dev/coc">Code of Conduct</a></li>
         </ul>
         <div class="footer-social">
           <a class="social-icon" href="https://github.com/lando/lando" target="_blank">
@@ -138,6 +142,7 @@ const customStyles = {
     align-items: center;
     justify-content: space-between;
     .footer-image {
+      padding-top: 2em;
       img {
         width: 200px
       }

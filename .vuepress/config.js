@@ -3,6 +3,7 @@ import {blogTheme} from './theme/index.js';
 
 export default defineUserConfig({
   base: '/blog/',
+  pagePatterns: ['index.md', 'CHANGELOG.md', 'content/**/*.md'],
   title: 'Lando',
   description: 'A liberating blog by and for professional developers. We share things about tech, DevOps and development using but not limited to Lando.',
   theme: blogTheme({
@@ -21,10 +22,10 @@ export default defineUserConfig({
     repo: 'lando/blog',
 
     // THEME CONFIG
-    baseUrl: 'https://lando.dev',
+    baseUrl: 'https://www.lando.dev',
     autometa: {
       twitter: '@devwithlando',
-      canonicalUrl: 'https://lando.dev/',
+      canonicalUrl: 'https://www.lando.dev/blog/',
     },
     carbonAds: false,
     contributorsPage: {
@@ -53,9 +54,10 @@ export default defineUserConfig({
     },
     sitemap: true,
     sharedNavbar: [
-      {text: 'Blog', link: '/'},
-      {text: 'Events', link: 'https://lando.dev/events'},
-      {text: 'Support', link: 'https://lando.dev/support/'},
+      {text: 'Mission', link: 'https://www.lando.dev/mission'},
+      {text: 'Blog', link: 'https://www.lando.dev/blog'},
+      {text: 'Events', link: 'https://www.lando.dev/events'},
+      {text: 'Support', link: 'https://www.lando.dev/support'},
       {text: 'Docs', link: 'https://docs.lando.dev'},
     ],
     sidebar: false,

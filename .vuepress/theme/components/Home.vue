@@ -123,7 +123,7 @@ const filterContent = tag => {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: $MQNarrow) {
   .blog-home {
     .home-content {
       .home-rightbar {

@@ -31,7 +31,7 @@ const isActive = computed(() => [
 ]);
 
 const isSidebarOpen = ref(false);
-const toggleSidebar = () => {
+const toggleSidebar = to => {
   document.body.classList.add('noscroll');
   isSidebarOpen.value = typeof to === 'boolean' ? to : !isSidebarOpen.value;
   isSidebarOpen.value ? document.body.classList.add('noscroll') : document.body.classList.remove('noscroll');
@@ -48,7 +48,11 @@ $hamburger-layer-width: 1.5rem !default;
 $hamburger-layer-height: 2px !default;
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
-@media (min-width: $MQMobile) {
+.toggle-sidebar-button {
+  display: block;
+}
+
+@media (min-width: ($MQNarrow + 1px)) {
   .toggle-sidebar-button {
     display: none;
   }

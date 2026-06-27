@@ -24,47 +24,47 @@
 # Redirect to canonical location
 [[redirects]]
   from = "https://blog.devwithlando.io"
-  to = "https://lando.dev/blog"
+  to = "https://www.lando.dev/blog"
   status = 301
   force = true
 [[redirects]]
   from = "https://blog.devwithlando.io/"
-  to = "https://lando.dev/blog"
+  to = "https://www.lando.dev/blog"
   status = 301
   force = true
 [[redirects]]
   from = "https://blog.devwithlando.io/*"
-  to = "https://lando.dev/blog/:splat"
+  to = "https://www.lando.dev/blog/:splat"
   status = 301
   force = true
 [[redirects]]
   from = "https://blog.lando.dev"
-  to = "https://lando.dev/blog"
+  to = "https://www.lando.dev/blog"
   status = 301
   force = true
 [[redirects]]
   from = "https://blog.lando.dev/"
-  to = "https://lando.dev/blog"
+  to = "https://www.lando.dev/blog"
   status = 301
   force = true
 [[redirects]]
   from = "https://blog.lando.dev/*"
-  to = "https://lando.dev/blog/:splat"
+  to = "https://www.lando.dev/blog/:splat"
   status = 301
   force = true
- [[redirects]]
+[[redirects]]
   from = "https://blog.lndo.io/"
-  to = "https://lando.dev/blog"
+  to = "https://www.lando.dev/blog"
   status = 301
   force = true
 [[redirects]]
   from = "https://blog.lndo.io"
-  to = "https://lando.dev/blog"
+  to = "https://www.lando.dev/blog"
   status = 301
   force = true
 [[redirects]]
   from = "https://blog.lndo.io/*"
-  to = "https://lando.dev/blog/:splat"
+  to = "https://www.lando.dev/blog/:splat"
   status = 301
   force = true
 
