@@ -28,17 +28,13 @@
 </template>
 
 <script setup>
-import {computed} from 'vue';
-import {useRouteLocale} from '@vuepress/client';
-import {useThemeLocaleData} from '@vuepress/theme-default/client';
+import {withBase} from '@vuepress/client';
 
 import DonateHeart from '../components/DonateHeart.vue';
 import NotFoundVisual from '../components/NotFoundVisual.vue';
 
-const routeLocale = useRouteLocale();
-const themeLocale = useThemeLocaleData();
-const homeLink = computed(() => themeLocale.value.home ?? routeLocale.value);
-const homeText = computed(() => themeLocale.value.backToHome ?? 'Back to blog');
+const homeLink = withBase('/');
+const homeText = 'Back to blog';
 </script>
 
 <style lang="scss">
