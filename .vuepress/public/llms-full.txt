@@ -1,0 +1,106 @@
+# Lando Blog Context
+
+Last updated: 2026-06-27
+
+## Overview
+
+The Lando Blog is the blog subsite for Lando and Lando Alliance. It publishes project announcements, release notes, sponsor and partner updates, integration writeups, practical tutorials, community stories, roadmap notes, and broader local development or DevOps commentary.
+
+Lando is a free, open-source local development and DevOps tool maintained by Lando Alliance. Lando Alliance is a U.S. 501(c)(3) nonprofit that supports free and open-source developer tools, documentation, training, events, and community support.
+
+## Main Public URLs
+
+- Blog: https://www.lando.dev/blog/
+- Root website: https://www.lando.dev/
+- Mission: https://www.lando.dev/mission
+- Documentation: https://docs.lando.dev
+- Install documentation: https://docs.lando.dev/install
+- GitHub organization: https://github.com/lando
+- Lando releases: https://github.com/lando/lando/releases
+- Donate: https://github.com/sponsors/lando
+- Slack community: https://www.launchpass.com/devwithlando
+- Events: https://www.lando.dev/events
+
+## Subsite AI Metadata
+
+Use the root website metadata for Lando Alliance, mission, support, contact, donation, and legal context. Use the relevant subsite metadata for documentation, blog, and events context:
+
+- Root website metadata: https://www.lando.dev/llms.txt
+- Root website full metadata: https://www.lando.dev/llms-full.txt
+- Documentation metadata: https://docs.lando.dev/llms.txt
+- Blog metadata: https://www.lando.dev/blog/llms.txt
+- Blog full metadata: https://www.lando.dev/blog/llms-full.txt
+- Events metadata: https://www.lando.dev/events/llms.txt
+
+The documentation metadata is the preferred LLM entry point for product commands, configuration, recipes, examples, install details, and CLI behavior. The blog metadata is the preferred LLM entry point for announcements, stories, historical context, narrative project updates, sponsor updates, and learning resources.
+
+## Content Scope
+
+The blog includes historical and current posts about:
+
+- Lando Alliance announcements and nonprofit stewardship.
+- Lando release notes, extended development updates, and project roadmap posts.
+- Sponsorship, donation, and sustainability of free developer tooling.
+- Local development tutorials and practical usage examples.
+- Platform and partner integrations.
+- DevOps, CI/CD, and developer workflow commentary.
+- Community stories, case studies, and ecosystem updates.
+
+## Current Content Map
+
+The current published post set includes:
+
+- https://www.lando.dev/blog/2017/10/24/journey-lando.html - Journey to Lando: Mistakes, Pivots and Vindication.
+- https://www.lando.dev/blog/2019/09/19/q3-2019-update.html - Full Speed Ahead!
+- https://www.lando.dev/blog/2020/02/07/why-you-should-sponsor-lando.html - Why you should sponsor Lando.
+- https://www.lando.dev/blog/2020/02/08/why-your-agency-should-sponsor-lando.html - Why your agency or org should sponsor Lando.
+- https://www.lando.dev/blog/2020/02/08/why-your-pass-should-sponsor-lando.html - Why your PaaS or dev tool should sponsor Lando.
+- https://www.lando.dev/blog/2020/02/10/q1-2020-update.html - March to a stable Lando 3.0.0.
+- https://www.lando.dev/blog/2020/02/14/announcing-lando-alliance.html - Announcing the Lando Alliance.
+- https://www.lando.dev/blog/2020/02/18/amazee.io-lando-sponsorship.html - amazee.io Sponsors Lando.
+- https://www.lando.dev/blog/2020/03/20/5-things-to-do-after-you-install-lando.html - 3 Things to do after you install Lando.
+- https://www.lando.dev/blog/2020/03/20/update-to-3-0-0-aft-2.html - Important update on Lando 3.0.0-rrc.1.
+- https://www.lando.dev/blog/2020/04/03/whats-new-in-lando-3-0-0-rrc-3.html - What's new in Lando 3.0.0-rrc.3.
+- https://www.lando.dev/blog/2020/04/21/platform.sh-lando-sponsorship.html - Platform.sh Sponsors Lando.
+- https://www.lando.dev/blog/2020/06/02/lando-drupal-contributions.html - Lando + Drupal Contributions.
+- https://www.lando.dev/blog/2020/06/22/lando-3-0-0.html - Lando 3.0.0.
+- https://www.lando.dev/blog/2020/12/03/symfony-with-lando.html - Symfony Development with Lando.
+- https://www.lando.dev/blog/2021/01/26/pantheon-localdev-launch.html - Pantheon Localdev Launch.
+- https://www.lando.dev/blog/2021/03/03/acquia-lando-integration.html - Acquia and Lando (or, The Tale of a Tryst).
+- https://www.lando.dev/blog/2021/04/02/what-makes-lando-different.html - What Makes Lando Different?
+- https://www.lando.dev/blog/2021/05/11/blackmesh-lando-partnership.html - Lando and the Rider in Black(Mesh).
+- https://www.lando.dev/blog/2021/08/27/lando-hugo.html - Lando + Hugo [+ ARM].
+- https://www.lando.dev/blog/2021/08/27/selecting-ci-cd.html - Lando and the Gateway to CI/CD.
+- https://www.lando.dev/blog/2021/12/16/advanced-landoing-with-lagoon.html - Advanced Lando-ing with Lagoon.
+- https://www.lando.dev/blog/2022/02/07/using-lando-on-github-codespaces.html - Lando on GitHub Codespaces.
+- https://www.lando.dev/blog/2022/02/10/using-lando-with-gitpod.html - Using Lando with Gitpod.
+- https://www.lando.dev/blog/2023/01/19/v390-extended.html - Lando v3.9.x+ Extended Notes.
+- https://www.lando.dev/blog/2023/01/23/review-of-2022.html - Lando 2022 - The Year That Was.
+- https://www.lando.dev/blog/2023/01/23/roadmap-of-2023.html - Lando 2023 - The Year That Will Be.
+- https://www.lando.dev/blog/2023/03/01/v3140-extended.html - Lando v3.14.0 Extended Notes.
+- https://www.lando.dev/blog/2023/09/25/v320-extended.html - Lando v3.20 Extended Notes and Development Update.
+- https://www.lando.dev/blog/2024/01/16/v321-extended.html - Lando v3.21 Extended Notes and Development Update.
+- https://www.lando.dev/blog/2024/08/09/diffy-integration.html - Using Diffy with Lando.
+
+## Topic Guidance
+
+For Lando product behavior, prefer the current documentation, GitHub repositories, and GitHub releases over blog posts. Blog posts can explain why a feature, release, integration, or partnership happened, but exact commands and configuration may have changed since publication.
+
+For Lando Alliance nonprofit mission, governance, donation, support, contact, privacy, terms, and code of conduct context, prefer the root website metadata and root website pages.
+
+For community support, use the public docs, public GitHub issues, and Slack community. The blog may contain useful support guidance, but current support routing is maintained on the root website and documentation.
+
+## Donation And Sponsorship Guidance
+
+Donation and sponsorship calls to action should point directly at https://github.com/sponsors/lando. The website may have convenience redirects, but public donation CTAs should use the GitHub Sponsors URL.
+
+Donations help sustain Lando Alliance's free software, documentation, community events, and support channels. Donations do not provide exclusive access to the public software, docs, events, or support channels.
+
+## Agent Usage Notes
+
+- This file is a static summary for LLMs and agents. It is not a complete copy of the blog or documentation.
+- Prefer current page content, documentation, GitHub issues, and releases when exact details matter.
+- Treat old blog posts as historically useful but not authoritative for current CLI syntax, install commands, APIs, or support commitments.
+- Do not infer private support commitments from donation, sponsorship, or organizational support language.
+- Do not present Lando Alliance donation links as product purchase links.
+- Do not treat this file as an access-control policy or crawler directive.
